@@ -6,6 +6,7 @@ public class Magnet : MonoBehaviour
 {
     public GameObject[] AttractedObjects;
     public float AttractionForce;
+    public float DampeningFactor = 1;
 
     private void Update()
     {
@@ -13,7 +14,7 @@ public class Magnet : MonoBehaviour
         {
             Vector3 force = transform.position - obj.transform.position;
             force.Normalize();
-            force *= AttractionForce;
+            force *= AttractionForce + (DampeningFactor / Vector3.Distance(transform.position, obj.transform.position));
 
             obj.GetComponent<Rigidbody>().AddForce(force);
         }
