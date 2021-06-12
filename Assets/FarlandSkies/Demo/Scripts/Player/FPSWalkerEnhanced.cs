@@ -58,8 +58,8 @@ public class FPSWalkerEnhanced : MonoBehaviour
         controller = GetComponent<CharacterController>();
         myTransform = transform;
         speed = walkSpeed;
-        rayDistance = controller.height * .5f + controller.radius;
-        slideLimit = controller.slopeLimit - .1f;
+        //rayDistance = controller.height * .5f + controller.radius;
+        //slideLimit = controller.slopeLimit - .1f;
         jumpTimer = antiBunnyHopFactor;
     }
 
@@ -146,7 +146,7 @@ public class FPSWalkerEnhanced : MonoBehaviour
         moveDirection.y -= gravity * Time.deltaTime;
 
         // Move the controller, and set grounded true or false depending on whether we're standing on something
-        grounded = (controller.Move(moveDirection * Time.deltaTime) & CollisionFlags.Below) != 0;
+        //grounded = (controller.Move(moveDirection * Time.deltaTime) & CollisionFlags.Below) != 0;
     }
 
     void Update()
