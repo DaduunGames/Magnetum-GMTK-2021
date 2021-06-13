@@ -8,7 +8,7 @@ public class PullTag : MonoBehaviour
     Vector3 lastMousePos;
     public Axis axis = Axis.y;
 
-    private GameObject camera;
+    private GameObject Cam;
 
     private Vector3 originalPos;
     public float MinDist;
@@ -26,13 +26,15 @@ public class PullTag : MonoBehaviour
     private void Start()
     {
         originalPos = transform.position;
-        camera = Camera.main.gameObject;
+        Cam = Camera.main.gameObject;
+
     }
 
 
     void OnMouseDown()
     {
         lastMousePos = Input.mousePosition;
+        pullAudio.Play();
     }
 
     void OnMouseDrag()
@@ -43,7 +45,7 @@ public class PullTag : MonoBehaviour
         {
             case Axis.x:
                 #region move
-                if (camera.transform.position.z < transform.position.z )
+                if (Cam.transform.position.z < transform.position.z )
                 {
                     pos.x += delta.x * dragSpeed;
                 }
@@ -64,7 +66,7 @@ public class PullTag : MonoBehaviour
 
             case Axis.z:
                 #region move
-                if (camera.transform.position.x < transform.position.x)
+                if (Cam.transform.position.x < transform.position.x)
                 {
                     pos.z += (delta.y + delta.x) / 2 * -dragSpeed;
                 }
@@ -83,7 +85,7 @@ public class PullTag : MonoBehaviour
 
         transform.position = pos;
         lastMousePos = Input.mousePosition;
-        pullAudio.Play();
+       
     }
 
     private void OnDrawGizmos()

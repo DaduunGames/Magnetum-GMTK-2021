@@ -22,6 +22,10 @@ public class GUIcontroller : MonoBehaviour
 
     bool isPaused;
 
+    public AudioSource aSource;
+    public AudioClip Hover;
+    public AudioClip Pressed;
+
     private void Start()
     {
         WsMagAnim = WsMagnets.GetComponent<Animator>();
@@ -44,15 +48,6 @@ public class GUIcontroller : MonoBehaviour
             }
            
         }
-
-        //if (Input.GetKeyDown(KeyCode.L))
-        //{
-        //    ActivateWinScreen();
-        //}
-        //if (Input.GetKeyDown(KeyCode.K))
-        //{
-        //    DeactivateWinScreen();
-        //}
     }
 
     public void ActivateWinScreen()
@@ -110,6 +105,7 @@ public class GUIcontroller : MonoBehaviour
     {
         WsMagnets.transform.position = obj.position;
         WsMagAnim.SetBool("Close",true);
+        aSource.PlayOneShot(Pressed);
     }
 
     public void MoveWinScreenMagnets(Transform obj)
@@ -117,13 +113,16 @@ public class GUIcontroller : MonoBehaviour
         if (!WsMagAnim.GetBool("Close")) 
         {
             WsMagnets.transform.position = obj.position;
+            aSource.PlayOneShot(Hover);
         }
+
     }
 
     public void TriggerPauseMagnets(Transform obj)
     {
         pMagnets.transform.position = obj.position;
         pMagAnim.SetBool("Close", true);
+        aSource.PlayOneShot(Pressed);
     }
 
     public void MovePauseMagnets(Transform obj)
@@ -131,7 +130,13 @@ public class GUIcontroller : MonoBehaviour
         if (!pMagAnim.GetBool("Close"))
         {
             pMagnets.transform.position = obj.position;
+            aSource.PlayOneShot(Hover);
         }
+    }
+
+    public void PlayClip(AudioClip clip)
+    {
+        aSource.PlayOneShot(clip);
     }
 
     public void LoadScene(int index)
