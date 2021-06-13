@@ -11,7 +11,12 @@ public class WinCondition : MonoBehaviour
 
     public GUIcontroller gui;
 
+    public AudioSource weldAudio;
     public AudioSource winAudio;
+
+    public ParticleSystem fireWorks;
+
+    bool hasReformed = false;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -21,14 +26,25 @@ public class WinCondition : MonoBehaviour
             meshfilter.mesh = CompleteMagnet;
             magnet.AttractedObjects = new GameObject[0];
             Instantiate(sparks, transform.position, transform.rotation);
-            winAudio.Play();
+            weldAudio.Play();
+            hasReformed = true;
+           
+        }
+    }
 
-            Invoke("Win", 1);
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.layer == 12 && hasReformed)
+        {
+            winAudio.Play();
+            fireWorks.Play();
+            Invoke("Win", 2);
         }
     }
 
     private void Win()
     {
+        
         gui.ActivateWinScreen();
     }
 }
