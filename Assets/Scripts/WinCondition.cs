@@ -11,6 +11,8 @@ public class WinCondition : MonoBehaviour
 
     public GUIcontroller gui;
 
+    public AudioSource winAudio;
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == 8)
@@ -19,6 +21,7 @@ public class WinCondition : MonoBehaviour
             meshfilter.mesh = CompleteMagnet;
             magnet.AttractedObjects = new GameObject[0];
             Instantiate(sparks, transform.position, transform.rotation);
+            winAudio.Play();
 
             Invoke("Win", 1);
         }

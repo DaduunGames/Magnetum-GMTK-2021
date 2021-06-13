@@ -14,6 +14,8 @@ public class PullTag : MonoBehaviour
     public float MinDist;
     public float MaxDist;
 
+    public AudioSource pullAudio;
+
     public enum Axis
     {
         x,
@@ -81,6 +83,7 @@ public class PullTag : MonoBehaviour
 
         transform.position = pos;
         lastMousePos = Input.mousePosition;
+        pullAudio.Play();
     }
 
     private void OnDrawGizmos()
