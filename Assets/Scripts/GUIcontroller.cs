@@ -68,4 +68,9 @@ public class GUIcontroller : MonoBehaviour
         Debug.Log("Quitting Game...");
         Application.Quit();
     }
+
+    public void LoadUrl(string url)
+    {
+        Application.OpenURL(url);
+    }
 }

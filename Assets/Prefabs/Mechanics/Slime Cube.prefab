@@ -107,3 +107,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SlimeResistance: 40
+  Particles: {fileID: 3666689375933470494, guid: 859d5699cd007bd4e826064d32d45856,
+    type: 3}
