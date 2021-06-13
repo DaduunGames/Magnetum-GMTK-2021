@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb5dc6420740a541ad1944036240476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeededBreakVelocity: 1
+  Health: 0
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
   breakAudio: {fileID: 1557524843}
@@ -18053,7 +18053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb5dc6420740a541ad1944036240476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeededBreakVelocity: 1
+  Health: 0
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
   breakAudio: {fileID: 768483277}
@@ -18838,7 +18838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb5dc6420740a541ad1944036240476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeededBreakVelocity: 1
+  Health: 1
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
   breakAudio: {fileID: 1098282819}
@@ -26086,7 +26086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb5dc6420740a541ad1944036240476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeededBreakVelocity: 1
+  Health: 0
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
   breakAudio: {fileID: 1835637935}
@@ -26490,7 +26490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb5dc6420740a541ad1944036240476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeededBreakVelocity: 1
+  Health: 2
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
   breakAudio: {fileID: 559089397}
@@ -27902,7 +27902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb5dc6420740a541ad1944036240476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeededBreakVelocity: 1
+  Health: 1
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
   breakAudio: {fileID: 588823929}
@@ -28027,7 +28027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb5dc6420740a541ad1944036240476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeededBreakVelocity: 1
+  Health: 1
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
   breakAudio: {fileID: 556250269}
@@ -28948,6 +28948,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Crate_1_Open
       objectReference: {fileID: 0}
+    - target: {fileID: 8416212148089163271, guid: 0e10d809b157a424fb44b80636fcc149,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.559
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416212148089163271, guid: 0e10d809b157a424fb44b80636fcc149,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.078
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e10d809b157a424fb44b80636fcc149, type: 3}
 --- !u!1 &1588777901 stripped
@@ -28987,7 +28997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb5dc6420740a541ad1944036240476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeededBreakVelocity: 1
+  Health: 1
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
   breakAudio: {fileID: 588823929}
@@ -32308,7 +32318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb5dc6420740a541ad1944036240476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeededBreakVelocity: 1
+  Health: 1
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
   breakAudio: {fileID: 25570376}
@@ -36716,7 +36726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb5dc6420740a541ad1944036240476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeededBreakVelocity: 1
+  Health: 1
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
   breakAudio: {fileID: 556250269}
@@ -38030,6 +38040,8 @@ MonoBehaviour:
   weldAudio: {fileID: 1068514638}
   winAudio: {fileID: 2034170977}
   fireWorks: {fileID: 400814515}
+  Goal1: {fileID: 0}
+  Goal2: {fileID: 0}
 --- !u!33 &930220684252152971
 MeshFilter:
   m_ObjectHideFlags: 0
