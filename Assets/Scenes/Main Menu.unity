@@ -1045,6 +1045,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 590632113}
+  - component: {fileID: 590632114}
   m_Layer: 5
   m_Name: Dummyobject
   m_TagString: Untagged
@@ -1071,6 +1072,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &590632114
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590632112}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &666117793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,7 +1283,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WinScreen: {fileID: 891777606}
   WsMagnets: {fileID: 1853332956}
-  GoalTip: {fileID: 590632112}
+  PauseScreen: {fileID: 590632112}
+  pMagnets: {fileID: 590632112}
+  HowToAnim: {fileID: 590632114}
+  GUI: {fileID: 590632114}
 --- !u!114 &808145518
 MonoBehaviour:
   m_ObjectHideFlags: 0

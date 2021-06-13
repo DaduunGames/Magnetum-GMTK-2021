@@ -7,49 +7,130 @@ using UnityEngine.UI;
 public class GUIcontroller : MonoBehaviour
 {
     public GameObject WinScreen;
-    private Animator WsAnim;
+    private Animator WsMagAnim;
     public GameObject WsMagnets;
 
-    public GameObject GoalTip;
+    public GameObject PauseScreen;
+    private Animator pMagAnim;
+    public GameObject pMagnets;
+
+    public Animator HowToAnim;
+
+    public Animator GUI;
 
     int sceneIndex;
 
-
+    bool isPaused;
 
     private void Start()
     {
-        GoalTip.SetActive(true);
-        WinScreen.SetActive(false);
+        WsMagAnim = WsMagnets.GetComponent<Animator>();
+        pMagAnim = pMagnets.GetComponent<Animator>();
+    }
 
-        WsAnim = WsMagnets.GetComponent<Animator>();
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isPaused)
+            {
+               
+                DeactivatePauseScreen();
+            }
+            else
+            {
+                
+                ActivatePauseScreen();
+            }
+           
+        }
+
+        //if (Input.GetKeyDown(KeyCode.L))
+        //{
+        //    ActivateWinScreen();
+        //}
+        //if (Input.GetKeyDown(KeyCode.K))
+        //{
+        //    DeactivateWinScreen();
+        //}
     }
 
     public void ActivateWinScreen()
     {
-       
-        GoalTip.SetActive(false);
-        WinScreen.SetActive(true);
+        GUI.SetBool("Triggered", true);
         WinScreen.GetComponent<Animator>().SetBool("Triggered", true);
+        PauseScreen.GetComponent<Animator>().SetBool("Triggered", false);
+        HowToAnim.SetBool("Triggered", false);
     }
     public void DeactivateWinScreen()
     {
-        
-        GoalTip.SetActive(false);
-        WinScreen.SetActive(false);
+        GUI.SetBool("Triggered", false);
         WinScreen.GetComponent<Animator>().SetBool("Triggered", false);
+        PauseScreen.GetComponent<Animator>().SetBool("Triggered", false);
+        HowToAnim.SetBool("Triggered", false);
+    }
+
+    
+
+    public void ActivatePauseScreen()
+    {
+        isPaused = true;
+        GUI.SetBool("Triggered", true);
+        PauseScreen.GetComponent<Animator>().SetBool("Triggered", true);
+        WinScreen.GetComponent<Animator>().SetBool("Triggered", false);
+        HowToAnim.SetBool("Triggered", false);
+    }
+    public void DeactivatePauseScreen()
+    {
+        isPaused = false;
+        GUI.SetBool("Triggered", false);
+        PauseScreen.GetComponent<Animator>().SetBool("Triggered", false);
+        WinScreen.GetComponent<Animator>().SetBool("Triggered", false);
+        HowToAnim.SetBool("Triggered", false);
+    }
+
+    public void ActivateHowTo()
+    {
+        isPaused = false;
+        GUI.SetBool("Triggered", true);
+        PauseScreen.GetComponent<Animator>().SetBool("Triggered", false);
+        WinScreen.GetComponent<Animator>().SetBool("Triggered", false);
+        HowToAnim.SetBool("Triggered", true);
+    }
+    public void DeactivateHowTo()
+    {
+        isPaused = false;
+        GUI.SetBool("Triggered", false);
+        PauseScreen.GetComponent<Animator>().SetBool("Triggered", false);
+        WinScreen.GetComponent<Animator>().SetBool("Triggered", false);
+        HowToAnim.SetBool("Triggered", false);
     }
 
     public void TriggerWinScreenMagnets(Transform obj)
     {
         WsMagnets.transform.position = obj.position;
-        WsAnim.SetBool("Close",true);
+        WsMagAnim.SetBool("Close",true);
     }
 
     public void MoveWinScreenMagnets(Transform obj)
     {
-        if (!WsAnim.GetBool("Close")) 
+        if (!WsMagAnim.GetBool("Close")) 
         {
             WsMagnets.transform.position = obj.position;
+        }
+    }
+
+    public void TriggerPauseMagnets(Transform obj)
+    {
+        pMagnets.transform.position = obj.position;
+        pMagAnim.SetBool("Close", true);
+    }
+
+    public void MovePauseMagnets(Transform obj)
+    {
+        if (!pMagAnim.GetBool("Close"))
+        {
+            pMagnets.transform.position = obj.position;
         }
     }
 
