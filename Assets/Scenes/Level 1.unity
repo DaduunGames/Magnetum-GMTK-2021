@@ -18841,7 +18841,7 @@ MonoBehaviour:
   NeededBreakVelocity: 1
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
-  breakAudio: {fileID: 0}
+  breakAudio: {fileID: 1098282819}
 --- !u!1 &836898877
 GameObject:
   m_ObjectHideFlags: 0
@@ -32311,7 +32311,7 @@ MonoBehaviour:
   NeededBreakVelocity: 1
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
-  breakAudio: {fileID: 0}
+  breakAudio: {fileID: 25570376}
 --- !u!1 &1830588281
 GameObject:
   m_ObjectHideFlags: 0
