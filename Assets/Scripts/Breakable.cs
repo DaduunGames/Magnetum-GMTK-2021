@@ -8,6 +8,8 @@ public class Breakable : MonoBehaviour
 
     public ParticleSystem particles;
 
+    public AudioSource breakAudio;
+
     private void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.layer == 8)
@@ -16,6 +18,7 @@ public class Breakable : MonoBehaviour
             if (rb.velocity.magnitude >= NeededBreakVelocity)
             {
                 Instantiate(particles, transform.position, transform.rotation);
+                breakAudio.Play();
                 Destroy(gameObject);
             }
         }
