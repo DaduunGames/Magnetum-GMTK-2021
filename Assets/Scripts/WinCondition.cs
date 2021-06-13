@@ -9,6 +9,8 @@ public class WinCondition : MonoBehaviour
     public ParticleSystem sparks;
     public Magnet magnet;
 
+    public GUIcontroller gui;
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == 8)
@@ -17,6 +19,13 @@ public class WinCondition : MonoBehaviour
             meshfilter.mesh = CompleteMagnet;
             magnet.AttractedObjects = new GameObject[0];
             Instantiate(sparks, transform.position, transform.rotation);
+
+            Invoke("Win", 1);
         }
+    }
+
+    private void Win()
+    {
+        gui.ActivateWinScreen();
     }
 }
