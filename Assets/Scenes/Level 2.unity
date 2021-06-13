@@ -3486,6 +3486,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 495fe475dcd719a44aab26824d5feb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 593165227}
+  weldClip: {fileID: 8300000, guid: 4a7a0661acc75f04ba6747ef98671367, type: 3}
 --- !u!95 &176393345
 Animator:
   serializedVersion: 3
@@ -26779,6 +26781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 495fe475dcd719a44aab26824d5feb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 593165227}
+  weldClip: {fileID: 8300000, guid: 4a7a0661acc75f04ba6747ef98671367, type: 3}
 --- !u!95 &1033725530
 Animator:
   serializedVersion: 3
