@@ -18,6 +18,16 @@ public class WinCondition : MonoBehaviour
 
     bool hasReformed = false;
 
+    public GameObject Goal1;
+    public GameObject Goal2;
+
+    private void Start()
+    {
+        Goal1.SetActive(true);
+        Goal2.SetActive(false);
+        Goal1.GetComponent<Animator>().Play("Goal1");
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == 8)
@@ -28,7 +38,9 @@ public class WinCondition : MonoBehaviour
             Instantiate(sparks, transform.position, transform.rotation);
             weldAudio.Play();
             hasReformed = true;
-           
+            Goal1.SetActive(false);
+            Goal2.SetActive(true);
+            Goal2.GetComponent<Animator>().Play("Goal2");
         }
     }
 
@@ -39,6 +51,8 @@ public class WinCondition : MonoBehaviour
             winAudio.Play();
             fireWorks.Play();
             Invoke("Win", 2);
+            Goal1.SetActive(false);
+            Goal2.SetActive(false);
         }
     }
 

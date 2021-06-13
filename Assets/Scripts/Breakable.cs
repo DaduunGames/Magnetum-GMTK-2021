@@ -4,23 +4,28 @@ using UnityEngine;
 
 public class Breakable : MonoBehaviour
 {
-    public float NeededBreakVelocity;
+    public float Health;
 
     public ParticleSystem particles;
 
     public AudioSource breakAudio;
 
+    private void Update()
+    {
+        if(Health <= 0)
+        {
+            Instantiate(particles, transform.position, transform.rotation);
+           
+            Destroy(gameObject);
+        }
+    }
+
     private void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.layer == 8)
         {
-            Rigidbody rb = col.gameObject.GetComponent<Rigidbody>();
-            if (rb.velocity.magnitude >= NeededBreakVelocity)
-            {
-                Instantiate(particles, transform.position, transform.rotation);
-                breakAudio.Play();
-                Destroy(gameObject);
-            }
+            breakAudio.Play();
+            Health--;
         }
     }
 }
