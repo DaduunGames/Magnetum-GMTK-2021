@@ -7,7 +7,8 @@ public class Lever : MonoBehaviour
     public Animator anim;
     public Interactable[] Interactables;
 
-
+    public AudioSource openDoor;
+    public AudioSource lever;
 
     private void OnTriggerEnter(Collider col)
     {
@@ -17,6 +18,8 @@ public class Lever : MonoBehaviour
             foreach(Interactable item in Interactables)
             {
                 item.Activate();
+                openDoor.Play();
+                lever.Play();
             }
         }
     }
