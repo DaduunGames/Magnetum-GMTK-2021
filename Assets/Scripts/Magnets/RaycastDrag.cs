@@ -17,7 +17,7 @@ public class RaycastDrag : MonoBehaviour
         if (IsHoldingMouse)
         {
             Ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(Ray, out Hit, 100f, layerMask))
+            if (Physics.Raycast(Ray, out Hit, 100f))
             {
                 
                 Anchor.transform.position = Hit.point;
