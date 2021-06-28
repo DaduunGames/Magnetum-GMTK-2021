@@ -48,7 +48,6 @@ public class SC_DragRigidbody : MonoBehaviour
     {
         if (selectedRigidbody)
         {
-            print(selectedRigidbody.name);
             Vector3 mousePositionOffset = targetCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, selectionDistance)) - originalScreenTargetPosition;
             selectedRigidbody.velocity = (originalRigidbodyPos + mousePositionOffset - selectedRigidbody.transform.position) * forceAmount * Time.deltaTime;
         }
@@ -65,8 +64,6 @@ public class SC_DragRigidbody : MonoBehaviour
         {
             hitInfo = Hit;
         }
-        
-        print(hitInfo.collider.name);
 
         if (hitInfo.collider.gameObject.GetComponent<Rigidbody>())
         {

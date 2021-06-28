@@ -7,7 +7,7 @@ public class WinCondition : MonoBehaviour
     public Mesh CompleteMagnet;
     public MeshFilter meshfilter;
     public ParticleSystem sparks;
-    public Magnet magnet;
+    public Magnet Nmagnet;
 
     public GUIcontroller gui;
 
@@ -21,6 +21,11 @@ public class WinCondition : MonoBehaviour
     public GameObject Goal1;
     public GameObject Goal2;
 
+    public Transform SMTransform;
+
+    public float collisionDist;
+    float timer = 0;
+
     private void Start()
     {
         Goal1.SetActive(true);
@@ -28,21 +33,31 @@ public class WinCondition : MonoBehaviour
         Goal1.GetComponent<Animator>().Play("Goal1");
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void FixedUpdate()
     {
-        if (collision.gameObject.layer == 8)
+        if (Vector3.Distance(SMTransform.position,transform.position) <= collisionDist)
         {
-            Destroy(collision.gameObject);
-            meshfilter.mesh = CompleteMagnet;
-            magnet.AttractedObjects = new GameObject[0];
-            Instantiate(sparks, transform.position, transform.rotation);
-            weldAudio.Play();
-            hasReformed = true;
-            Goal1.SetActive(false);
-            Goal2.SetActive(true);
-            Goal2.GetComponent<Animator>().Play("Goal2");
+            Invoke("CheckAgain", 0.1f);
         }
     }
+
+    private void CheckAgain()
+    {
+        if (Vector3.Distance(SMTransform.position, transform.position) <= collisionDist)
+        {
+            Destroy(SMTransform.gameObject);
+            Weld();
+        }
+    }
+
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.layer == 8)
+    //    {
+    //        Destroy(collision.gameObject);
+    //        Weld();
+    //    }
+    //}
 
     private void OnTriggerEnter(Collider other)
     {
@@ -60,5 +75,24 @@ public class WinCondition : MonoBehaviour
     {
         
         gui.ActivateWinScreen();
+    }
+
+    private void Weld()
+    {
+        meshfilter.mesh = CompleteMagnet;
+        Nmagnet.AttractedObjects = new GameObject[0];
+        Instantiate(sparks, transform.position, transform.rotation);
+        weldAudio.Play();
+        hasReformed = true;
+        Goal1.SetActive(false);
+        Goal2.SetActive(true);
+        Goal2.GetComponent<Animator>().Play("Goal2");
+    }
+
+    private void OnDrawGizmos()
+    {
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, collisionDist / 2);
     }
 }

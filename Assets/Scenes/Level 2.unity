@@ -3323,8 +3323,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 14.403688, y: 6.351388, z: 0.6146176}
-  m_Center: {x: -2.6279879, y: 0.51355267, z: 0.4280404}
+  m_Size: {x: 0.8130436, y: 4.233697, z: 2.3191564}
+  m_Center: {x: -3.9033256, y: 2.255065, z: 1.8078405}
 --- !u!4 &175126229 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8ea60716f5a0dda439f9a9471b48e6e3,
@@ -8351,13 +8351,15 @@ MonoBehaviour:
     type: 3}
   meshfilter: {fileID: 384989475}
   sparks: {fileID: 5059147441785926363, guid: 74f5435f93a2be844a8f71e899299ba2, type: 3}
-  magnet: {fileID: 384989472}
+  Nmagnet: {fileID: 1809035448}
   gui: {fileID: 839494509}
   weldAudio: {fileID: 119971440}
   winAudio: {fileID: 2019168499}
   fireWorks: {fileID: 1135039696}
   Goal1: {fileID: 1470174977}
   Goal2: {fileID: 596589868}
+  SMTransform: {fileID: 1809035443}
+  collisionDist: 1
 --- !u!135 &384989470
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8385,8 +8387,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttractedObjects:
   - {fileID: 1809035442}
-  AttractionForce: 300
-  DampeningFactor: 2
+  AttractionForce: 150
+  DampeningFactor: 10000
 --- !u!54 &384989473
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42680,7 +42682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29c825d2127440740bd204fac191d941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceAmount: 500
+  forceAmount: 300
   layerMask:
     serializedVersion: 2
     m_Bits: 513
@@ -45636,8 +45638,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttractedObjects:
   - {fileID: 384989467}
-  AttractionForce: 200
-  DampeningFactor: 2
+  AttractionForce: 150
+  DampeningFactor: 10000
 --- !u!4 &1811010645 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 66b5190dd1be692469f22206e0bafc42,
