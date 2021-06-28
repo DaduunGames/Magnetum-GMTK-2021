@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 77715b8b6b248994891d3ccad1ad330b, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: ceb0a3ed2cb53a94fa21843cc958c52b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38423,13 +38423,15 @@ MonoBehaviour:
     type: 3}
   meshfilter: {fileID: 8104993313901415705}
   sparks: {fileID: 5059147441785926363, guid: 74f5435f93a2be844a8f71e899299ba2, type: 3}
-  magnet: {fileID: 786118854114805649}
+  Nmagnet: {fileID: 0}
   gui: {fileID: 887124237}
   weldAudio: {fileID: 1068514638}
   winAudio: {fileID: 2034170977}
   fireWorks: {fileID: 400814515}
   Goal1: {fileID: 1693131601}
   Goal2: {fileID: 371040951}
+  SMTransform: {fileID: 0}
+  collisionDist: 0
 --- !u!33 &930220684252152971
 MeshFilter:
   m_ObjectHideFlags: 0
