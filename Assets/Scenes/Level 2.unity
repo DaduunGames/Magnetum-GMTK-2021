@@ -8311,9 +8311,8 @@ GameObject:
   - component: {fileID: 384989475}
   - component: {fileID: 384989474}
   - component: {fileID: 384989473}
-  - component: {fileID: 384989472}
-  - component: {fileID: 384989471}
   - component: {fileID: 384989470}
+  - component: {fileID: 384989472}
   - component: {fileID: 384989469}
   m_Layer: 9
   m_Name: NorthMagnet
@@ -8372,22 +8371,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.010264631
   m_Center: {x: 0.000025077663, y: -0.0000000019868214, z: 0.000000029802322}
---- !u!114 &384989471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384989467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688ebd20e1c29384ca23d7ebbb022fd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Anchor: {fileID: 1841965809}
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 1079
 --- !u!114 &384989472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8402,7 +8385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttractedObjects:
   - {fileID: 1809035442}
-  AttractionForce: 150
+  AttractionForce: 300
   DampeningFactor: 2
 --- !u!54 &384989473
 Rigidbody:
@@ -8415,11 +8398,11 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 10
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!23 &384989474
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33753,6 +33736,50 @@ MonoBehaviour:
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
   breakAudio: {fileID: 1921759781}
+--- !u!1 &1218542004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1218542005}
+  - component: {fileID: 1218542006}
+  m_Layer: 10
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1218542005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218542004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.49, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1274904832}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1218542006
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218542004}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.375003, y: 14.511646, z: 14.451927}
+  m_Center: {x: -2.5163102, y: 3.4635925, z: -2.4202194}
 --- !u!4 &1221810188 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c471e11cb82cf8b438038f2442a9e098,
@@ -34493,6 +34520,7 @@ Transform:
   - {fileID: 1563999058}
   - {fileID: 269059298}
   - {fileID: 976509061}
+  - {fileID: 1218542005}
   m_Father: {fileID: 285413365}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36898,7 +36926,7 @@ MonoBehaviour:
   Health: 1
   particles: {fileID: 4519573834473850768, guid: 4cca54dbd4538484798a309128dc3f03,
     type: 3}
-  breakAudio: {fileID: 0}
+  breakAudio: {fileID: 250708157}
 --- !u!4 &1379325288 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9144917434236459188, guid: 09853b7f062375a438e1fcc026b8e7ba,
@@ -42529,7 +42557,9 @@ GameObject:
   - component: {fileID: 1636035949}
   - component: {fileID: 1636035948}
   - component: {fileID: 1636035947}
-  m_Layer: 0
+  - component: {fileID: 1636035951}
+  - component: {fileID: 1636035950}
+  m_Layer: 13
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -42622,6 +42652,38 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!54 &1636035950
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636035945}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1636035951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636035945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29c825d2127440740bd204fac191d941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceAmount: 500
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 513
 --- !u!1001 &1639298762
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45462,6 +45524,7 @@ GameObject:
   - component: {fileID: 1809035446}
   - component: {fileID: 1809035445}
   - component: {fileID: 1809035444}
+  - component: {fileID: 1809035448}
   m_Layer: 8
   m_Name: SouthMagnet
   m_TagString: Untagged
@@ -45509,9 +45572,9 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!23 &1809035446
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45559,6 +45622,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809035442}
   m_Mesh: {fileID: 212370497460711607, guid: f8c397b2d802056488a30dd8878afeb1, type: 3}
+--- !u!114 &1809035448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809035442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdf16cabdb78fa847884e6e1e948ce9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttractedObjects:
+  - {fileID: 384989467}
+  AttractionForce: 200
+  DampeningFactor: 2
 --- !u!4 &1811010645 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 66b5190dd1be692469f22206e0bafc42,
@@ -46310,7 +46389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1841965810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49944,7 +50023,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2031343579}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Camera Anchor
   m_TagString: Untagged
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}

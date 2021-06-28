@@ -14,7 +14,7 @@ public class Magnet : MonoBehaviour
         {
             Vector3 force = transform.position - obj.transform.position;
             force.Normalize();
-            force *= AttractionForce + (DampeningFactor / Vector3.Distance(transform.position, obj.transform.position));
+            force *= (AttractionForce + (DampeningFactor / Vector3.Distance(transform.position, obj.transform.position)) * Time.deltaTime);
 
             obj.GetComponent<Rigidbody>().AddForce(force);
         }
