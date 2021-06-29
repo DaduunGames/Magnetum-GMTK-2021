@@ -20794,6 +20794,13 @@ MonoBehaviour:
   distanceMin: 7
   distanceMax: 30
   smoothTime: 5
+  PosXAnchor: {fileID: 1877982122}
+  NegXAnchor: {fileID: 450809053}
+  PosZAnchor: {fileID: 1896445248}
+  NegZAnchor: {fileID: 944296803}
+  PosYAnchor: {fileID: 1024260219}
+  NegYAnchor: {fileID: 670579703}
+  CurrentAnchor: {fileID: 0}
 --- !u!1001 &966536767
 PrefabInstance:
   m_ObjectHideFlags: 0

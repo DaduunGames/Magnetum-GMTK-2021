@@ -17,6 +17,13 @@ public class CamerOrbit : MonoBehaviour
     public float distanceMin = 10f;
     public float distanceMax = 10f;
     public float smoothTime = 2f;
+    public GameObject PosXAnchor;
+    public GameObject NegXAnchor;
+    public GameObject PosZAnchor;
+    public GameObject NegZAnchor;
+    public GameObject PosYAnchor;
+    public GameObject NegYAnchor;
+    public GameObject CurrentAnchor;
     float rotationYAxis = 0.0f;
     float rotationXAxis = 0.0f;
     float velocityX = 0.0f;
@@ -32,6 +39,8 @@ public class CamerOrbit : MonoBehaviour
         {
             GetComponent<Rigidbody>().freezeRotation = true;
         }
+
+        AnchorFinder();
     }
     void LateUpdate()
     {
@@ -62,6 +71,77 @@ public class CamerOrbit : MonoBehaviour
             velocityX = Mathf.Lerp(velocityX, 0, Time.deltaTime * smoothTime);
             velocityY = Mathf.Lerp(velocityY, 0, Time.deltaTime * smoothTime);
         }
+
+        /*if (Input.GetKeyDown(KeyCode.W))
+        {
+            if (CurrentAnchor != PosYAnchor)
+            {
+                if (CurrentAnchor == NegYAnchor)
+                {
+
+                }
+                else
+                {
+                    CurrentAnchor = PosYAnchor;
+                }
+            }
+        }*/
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            AnchorFinder();
+            if(CurrentAnchor = PosXAnchor)
+            {
+                CurrentAnchor = NegZAnchor;
+            }
+            if(CurrentAnchor = NegXAnchor)
+            {
+                CurrentAnchor = PosZAnchor;
+            }
+            if(CurrentAnchor = PosZAnchor)
+            {
+                CurrentAnchor = PosXAnchor;
+            }
+            if(CurrentAnchor = NegZAnchor)
+            {
+                CurrentAnchor = NegXAnchor;
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.D))
+        {
+            AnchorFinder();
+            if(CurrentAnchor = PosXAnchor)
+            {
+                CurrentAnchor = PosZAnchor;
+            }
+            if(CurrentAnchor = NegXAnchor)
+            {
+                CurrentAnchor = NegZAnchor;
+            }
+            if(CurrentAnchor = PosZAnchor)
+            {
+                CurrentAnchor = NegXAnchor;
+            }
+            if(CurrentAnchor = NegZAnchor)
+            {
+                CurrentAnchor = PosXAnchor;
+            }
+        }
+
+        /*if(Input.GetKeyDown(KeyCode.S))
+        {
+            if(CurrentAnchor != NegYAnchor)
+            {
+                if(CurrentAnchor == PosYAnchor)
+                {
+
+                }
+                else
+                {
+                    CurrentAnchor = NegYAnchor;
+                }
+            }
+        }*/
     }
     public static float ClampAngle(float angle, float min, float max)
     {
@@ -70,6 +150,31 @@ public class CamerOrbit : MonoBehaviour
         if (angle > 360F)
             angle -= 360F;
         return Mathf.Clamp(angle, min, max);
+    }
+
+    public void AnchorFinder()
+    {
+        float PosXDistance = Vector3.Distance(gameObject.transform.position, PosXAnchor.transform.position);
+        float NegXDistance = Vector3.Distance(gameObject.transform.position, NegXAnchor.transform.position);
+        float PosZDistance = Vector3.Distance(gameObject.transform.position, PosZAnchor.transform.position);
+        float NegZDistance = Vector3.Distance(gameObject.transform.position, NegZAnchor.transform.position);
+
+        if (PosXDistance < NegXDistance && PosXDistance < PosZDistance && PosXDistance < NegZDistance)
+        {
+            CurrentAnchor = PosXAnchor;
+        }
+        if(NegXDistance < PosXDistance && NegXDistance < PosZDistance && NegXDistance < NegZDistance)
+        {
+            CurrentAnchor = NegXAnchor;
+        }
+        if(PosZDistance < PosXDistance && PosZDistance < NegXDistance && PosZDistance < NegZDistance)
+        {
+            CurrentAnchor = PosZAnchor;
+        }
+        if(NegZDistance < PosXDistance && NegZDistance < PosXDistance && NegZDistance < PosZDistance)
+        {
+            CurrentAnchor = NegZAnchor;
+        }
     }
 
 }
