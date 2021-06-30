@@ -30,6 +30,11 @@ public class GUIcontroller : MonoBehaviour
     {
         WsMagAnim = WsMagnets.GetComponent<Animator>();
         pMagAnim = pMagnets.GetComponent<Animator>();
+
+        WinScreen.SetActive(false);
+        PauseScreen.SetActive(false);
+        HowToAnim.gameObject.SetActive(false);
+        GUI.gameObject.SetActive(true);
     }
 
     private void Update()
@@ -52,6 +57,11 @@ public class GUIcontroller : MonoBehaviour
 
     public void ActivateWinScreen()
     {
+        WinScreen.SetActive(true);
+        PauseScreen.SetActive(false);
+        HowToAnim.gameObject.SetActive(false);
+        GUI.gameObject.SetActive(false);
+
         GUI.SetBool("Triggered", true);
         WinScreen.GetComponent<Animator>().SetBool("Triggered", true);
         PauseScreen.GetComponent<Animator>().SetBool("Triggered", false);
@@ -59,6 +69,11 @@ public class GUIcontroller : MonoBehaviour
     }
     public void DeactivateWinScreen()
     {
+        WinScreen.SetActive(false);
+        PauseScreen.SetActive(false);
+        HowToAnim.gameObject.SetActive(false);
+        GUI.gameObject.SetActive(true);
+
         GUI.SetBool("Triggered", false);
         WinScreen.GetComponent<Animator>().SetBool("Triggered", false);
         PauseScreen.GetComponent<Animator>().SetBool("Triggered", false);
@@ -69,6 +84,11 @@ public class GUIcontroller : MonoBehaviour
 
     public void ActivatePauseScreen()
     {
+        WinScreen.SetActive(false);
+        PauseScreen.SetActive(true);
+        HowToAnim.gameObject.SetActive(false);
+        GUI.gameObject.SetActive(false);
+
         isPaused = true;
         GUI.SetBool("Triggered", true);
         PauseScreen.GetComponent<Animator>().SetBool("Triggered", true);
@@ -77,6 +97,11 @@ public class GUIcontroller : MonoBehaviour
     }
     public void DeactivatePauseScreen()
     {
+        WinScreen.SetActive(false);
+        PauseScreen.SetActive(false);
+        HowToAnim.gameObject.SetActive(false);
+        GUI.gameObject.SetActive(true);
+
         isPaused = false;
         GUI.SetBool("Triggered", false);
         PauseScreen.GetComponent<Animator>().SetBool("Triggered", false);
@@ -86,6 +111,11 @@ public class GUIcontroller : MonoBehaviour
 
     public void ActivateHowTo()
     {
+        WinScreen.SetActive(false);
+        PauseScreen.SetActive(false);
+        HowToAnim.gameObject.SetActive(true);
+        GUI.gameObject.SetActive(false);
+
         isPaused = false;
         GUI.SetBool("Triggered", true);
         PauseScreen.GetComponent<Animator>().SetBool("Triggered", false);
@@ -94,6 +124,11 @@ public class GUIcontroller : MonoBehaviour
     }
     public void DeactivateHowTo()
     {
+        WinScreen.SetActive(false);
+        PauseScreen.SetActive(false);
+        HowToAnim.gameObject.SetActive(false);
+        GUI.gameObject.SetActive(true);
+
         isPaused = false;
         GUI.SetBool("Triggered", false);
         PauseScreen.GetComponent<Animator>().SetBool("Triggered", false);
