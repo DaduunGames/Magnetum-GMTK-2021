@@ -179,14 +179,24 @@ public class GUIcontroller : MonoBehaviour
         sceneIndex = index;
         Invoke("Scene", 0.25f);
     }
+
+    public void Continue()
+    {
+        sceneIndex = Save.currentLevel;
+        Invoke("Scene", 0.25f);
+    }
     private void Scene()
     {
+        if (sceneIndex != 0) Save.currentLevel = sceneIndex;
         SceneManager.LoadScene(sceneIndex);
     }
 
     public void QuitGame()
     {
         Debug.Log("Quitting Game...");
+
+        if (sceneIndex != 0) Save.currentLevel = sceneIndex;
+
         Application.Quit();
     }
 
