@@ -4,11 +4,5 @@ using UnityEngine;
 
 public static class Save
 {
-    public static int currentLevel;
     
-
-    //public static void SaveGame()
-    //{
-
-    //}
 }

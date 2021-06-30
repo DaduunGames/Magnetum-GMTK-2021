@@ -26,6 +26,8 @@ public class GUIcontroller : MonoBehaviour
     public AudioClip Hover;
     public AudioClip Pressed;
 
+    public GameObject ContinueButton;
+
     private void Start()
     {
         WsMagAnim = WsMagnets.GetComponent<Animator>();
@@ -35,6 +37,17 @@ public class GUIcontroller : MonoBehaviour
         PauseScreen.SetActive(false);
         HowToAnim.gameObject.SetActive(false);
         GUI.gameObject.SetActive(true);
+
+
+        if (ContinueButton)
+        {
+            ContinueButton.SetActive(false);
+
+            if (PlayerPrefs.GetInt("CurrentScene", 1) != 1)
+            {
+                ContinueButton.SetActive(true);
+            }
+        }
     }
 
     private void Update()
@@ -180,22 +193,27 @@ public class GUIcontroller : MonoBehaviour
         Invoke("Scene", 0.25f);
     }
 
+    public void NewGame()
+    {
+        PlayerPrefs.DeleteKey("CurrentScene");
+        sceneIndex = 1;
+        Invoke("Scene", 0.25f);
+    }
+
     public void Continue()
     {
-        sceneIndex = Save.currentLevel;
+        sceneIndex = PlayerPrefs.GetInt("CurrentScene", 1);
         Invoke("Scene", 0.25f);
     }
     private void Scene()
     {
-        if (sceneIndex != 0) Save.currentLevel = sceneIndex;
+        if (sceneIndex != 0) PlayerPrefs.SetInt("CurrentScene", sceneIndex);
         SceneManager.LoadScene(sceneIndex);
     }
 
     public void QuitGame()
     {
         Debug.Log("Quitting Game...");
-
-        if (sceneIndex != 0) Save.currentLevel = sceneIndex;
 
         Application.Quit();
     }
