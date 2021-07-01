@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3875462458774534196}
   - component: {fileID: 3875462458775336980}
   - component: {fileID: 3875462458776435412}
-  - component: {fileID: 3875462458774234133}
+  - component: {fileID: 6045853413405547684}
   m_Layer: 0
   m_Name: Book_DeepRed
   m_TagString: Untagged
@@ -55,6 +55,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,6 +68,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79,8 +81,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &3875462458774234133
-MeshCollider:
+--- !u!65 &6045853413405547684
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89,7 +91,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 8842cdd23cd83c14c9425c0ae07507c7, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.0033781757, y: 0.0010675692, z: 0.003912909}
+  m_Center: {x: -0.00017994252, y: 0.0000000034924605, z: 0.0019564554}

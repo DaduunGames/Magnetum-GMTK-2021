@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8944999371652729984}
   - component: {fileID: 8944999371649338528}
   - component: {fileID: 8944999371650436704}
-  - component: {fileID: 8944999371652698279}
+  - component: {fileID: 8729663699039139290}
   m_Layer: 0
   m_Name: Flask
   m_TagString: Untagged
@@ -55,6 +55,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -66,6 +67,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -78,8 +80,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &8944999371652698279
-MeshCollider:
+--- !u!65 &8729663699039139290
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88,7 +90,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 9ec750fc4cf747f4fbc15d8898b84ad7, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.0024221083, y: 0.0024221088, z: 0.0030988017}
+  m_Center: {x: 0, y: -1.0822393e-17, z: 0.00076155836}

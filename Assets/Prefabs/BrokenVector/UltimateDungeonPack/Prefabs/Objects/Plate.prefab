@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8570501285430546738}
   - component: {fileID: 8570501285431316754}
   - component: {fileID: 8570501285432316882}
-  - component: {fileID: 8570501285430316309}
+  - component: {fileID: 2618619879016948941}
   m_Layer: 0
   m_Name: Plate
   m_TagString: Untagged
@@ -55,6 +55,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -66,6 +67,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -78,8 +80,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &8570501285430316309
-MeshCollider:
+--- !u!65 &2618619879016948941
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88,7 +90,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 5ea2f20c59b62c94cb5613b2b9d46328, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.0051104603, y: 0.0053734556, z: 0.0008773216}
+  m_Center: {x: -1.1641532e-10, y: 0, z: 0.00026052786}
