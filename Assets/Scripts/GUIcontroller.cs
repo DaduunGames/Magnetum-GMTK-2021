@@ -26,7 +26,7 @@ public class GUIcontroller : MonoBehaviour
     public AudioClip Hover;
     public AudioClip Pressed;
 
-    public GameObject ContinueButton;
+    public GameObject ContinueGameButton;
 
     private void Start()
     {
@@ -38,16 +38,16 @@ public class GUIcontroller : MonoBehaviour
         HowToAnim.gameObject.SetActive(false);
         GUI.gameObject.SetActive(true);
 
-
-        if (ContinueButton)
+        if (ContinueGameButton)
         {
-            ContinueButton.SetActive(false);
+            ContinueGameButton.SetActive(false);
 
-            if (PlayerPrefs.GetInt("CurrentScene", 1) != 1)
+            if (PlayerPrefs.GetInt("CurrentScene", 1) > 1)
             {
-                ContinueButton.SetActive(true);
+                ContinueGameButton.SetActive(true);
             }
         }
+
     }
 
     private void Update()
@@ -187,25 +187,31 @@ public class GUIcontroller : MonoBehaviour
         aSource.PlayOneShot(clip);
     }
 
+    public void NextLevel()
+    {
+        sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        Invoke("scene", 0.25f);
+    }
+
     public void LoadScene(int index)
     {
         sceneIndex = index;
-        Invoke("Scene", 0.25f);
+        Invoke("scene", 0.25f);
     }
 
     public void NewGame()
     {
         PlayerPrefs.DeleteKey("CurrentScene");
         sceneIndex = 1;
-        Invoke("Scene", 0.25f);
+        Invoke("scene", 0.25f);
     }
 
     public void Continue()
     {
         sceneIndex = PlayerPrefs.GetInt("CurrentScene", 1);
-        Invoke("Scene", 0.25f);
+        Invoke("scene", 0.25f);
     }
-    private void Scene()
+    private void scene()
     {
         if (sceneIndex != 0) PlayerPrefs.SetInt("CurrentScene", sceneIndex);
         SceneManager.LoadScene(sceneIndex);

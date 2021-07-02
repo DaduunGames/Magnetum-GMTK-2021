@@ -26,6 +26,8 @@ public class WinCondition : MonoBehaviour
     public float collisionDist;
     float timer = 0;
 
+    public GameObject CameraAnchor;
+
     private void Start()
     {
         Goal1.SetActive(true);
@@ -35,29 +37,28 @@ public class WinCondition : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Vector3.Distance(SMTransform.position,transform.position) <= collisionDist)
+        if (SMTransform) 
         {
-            Invoke("CheckAgain", 0.1f);
+            if (Vector3.Distance(SMTransform.position, transform.position) <= collisionDist)
+            {
+                Invoke("CheckAgain", 0.1f);
+            }
         }
     }
 
     private void CheckAgain()
     {
-        if (Vector3.Distance(SMTransform.position, transform.position) <= collisionDist)
+        if (SMTransform)
         {
-            Destroy(SMTransform.gameObject);
-            Weld();
+            if (Vector3.Distance(SMTransform.position, transform.position) <= collisionDist)
+            {
+                Destroy(SMTransform.gameObject);
+                Weld();
+            }
         }
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.layer == 8)
-    //    {
-    //        Destroy(collision.gameObject);
-    //        Weld();
-    //    }
-    //}
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -81,6 +82,8 @@ public class WinCondition : MonoBehaviour
     {
         meshfilter.mesh = CompleteMagnet;
         Nmagnet.AttractedObjects = new GameObject[0];
+        CameraAnchor.GetComponent<Magnet>().AttractedObjects = new GameObject[1];
+        CameraAnchor.GetComponent<Magnet>().AttractedObjects[0] = Nmagnet.gameObject;
         Instantiate(sparks, transform.position, transform.rotation);
         weldAudio.Play();
         hasReformed = true;
