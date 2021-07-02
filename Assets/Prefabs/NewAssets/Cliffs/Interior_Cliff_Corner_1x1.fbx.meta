@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: d8e2ab2e86f011c4cb62eaab9a4efbe5
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 7787263485542294998
+    second: Interior_Cliff_Corner_1x1|Interior_Cliff_Corner_1x1Action
   externalObjects: {}
   materials:
     materialImportMode: 1
