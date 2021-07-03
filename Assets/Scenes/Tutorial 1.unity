@@ -10148,7 +10148,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh377656
+  m_Name: pb_Mesh66944
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12504,7 +12504,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh378074
+  m_Name: pb_Mesh67368
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22406,7 +22406,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh377720
+  m_Name: pb_Mesh67008
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24878,3 +24878,87 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 405850044}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2362746001128108214
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 136055473348825041, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_Name
+      value: Dorru
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.09744134
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.09744134
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.09744134
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.074
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9541335
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.29938155
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 34.841003
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 69d409e193acb664a90ad21c8cd12beb, type: 3}
