@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Water
-  m_Shader: {fileID: 4800000, guid: 28eec1d9bbdd2844d9e7884880bc65c0, type: 3}
+  m_Name: M_DeepWater
+  m_Shader: {fileID: 4800000, guid: 66fa1945aa9f5fc48b91cbf822aa11d3, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,22 +20,23 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _DepthRampTex:
-        m_Texture: {fileID: 2800000, guid: d3ca4332229619d4eb5d2b828074c2d4, type: 3}
+        m_Texture: {fileID: 2800000, guid: eb98e604b2cc2994b82d9c380fa0e21a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ab78a862493ed7f42a9d16bc994e6697, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0b1f0f53b8facd744a5c4540593c2536, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NoiseTex:
-        m_Texture: {fileID: 2800000, guid: 987c6530b942f1f498d6c58cf30a6b71, type: 3}
+        m_Texture: {fileID: 2800000, guid: 65badaa0d61ae9d4c891f2fdf889670c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _DepthFactor: 1.06
-    - _DistortStrength: 2.47
-    - _ExtraHeight: -0.12
-    - _WaveAmp: -0.14
-    - _WaveSpeed: 7.27
+    - _DepthFactor: 0.5
+    - _DistortStrength: -1.02
+    - _ExtraHeight: 0
+    - _WaveAmp: 0
+    - _WaveSpeed: 4.65
     m_Colors:
-    - _Color: {r: 0.17354932, g: 0.8189936, b: 0.9433962, a: 1}
+    - _Color: {r: 0.070588164, g: 0.98039216, b: 0.7133257, a: 0.98039216}
+    - _EdgeColor: {r: 1, g: 1, b: 1, a: 1}
