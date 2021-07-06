@@ -3799,6 +3799,7 @@ MonoBehaviour:
   aSource: {fileID: 940119508}
   Hover: {fileID: 8300000, guid: 4f9508ed844955b459a357b0a8b53804, type: 3}
   Pressed: {fileID: 8300000, guid: 0b494dc7d475b4545ab30ef9640210ee, type: 3}
+  ContinueGameButton: {fileID: 0}
 --- !u!114 &396223358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4036,13 +4037,6 @@ MonoBehaviour:
   distanceMin: 20
   distanceMax: 40
   smoothTime: 5
-  PosXAnchor: {fileID: 0}
-  NegXAnchor: {fileID: 0}
-  PosZAnchor: {fileID: 0}
-  NegZAnchor: {fileID: 0}
-  PosYAnchor: {fileID: 0}
-  NegYAnchor: {fileID: 0}
-  CurrentAnchor: {fileID: 0}
 --- !u!81 &426227276
 AudioListener:
   m_ObjectHideFlags: 0
