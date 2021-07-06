@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.90770906, g: 0.9528302, b: 0.4449537, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 617d9be015db68348a623b01ea51a8c5, type: 2}
   m_HaloStrength: 0.5
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionIntensity: 0.444
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_Sun: {fileID: 1323509636}
+  m_IndirectSpecularColor: {r: 0.08524401, g: 0.2640345, b: 0.3451334, a: 0.444}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -52,12 +52,12 @@ LightmapSettings:
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
     m_EnableBakedLightmaps: 1
-    m_EnableRealtimeLightmaps: 0
+    m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
     serializedVersion: 12
     m_Resolution: 2
-    m_BakeResolution: 40
-    m_AtlasSize: 1024
+    m_BakeResolution: 1
+    m_AtlasSize: 256
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
@@ -72,9 +72,9 @@ LightmapSettings:
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
-    m_BakeBackend: 1
+    m_BakeBackend: 2
     m_PVRSampling: 1
-    m_PVRDirectSampleCount: 32
+    m_PVRDirectSampleCount: 16
     m_PVRSampleCount: 512
     m_PVRBounces: 2
     m_PVREnvironmentSampleCount: 256
@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: cec3f3b1d15a58542a35dd72ab4022b3,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -160,7 +161,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &16433564
 BoxCollider:
@@ -1383,10 +1384,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9b55095a79a5e9f4db26c67de80a635d,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b55095a79a5e9f4db26c67de80a635d, type: 3}
@@ -1601,10 +1622,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
         type: 3}
       propertyPath: m_Name
       value: Stone_Pillar_Base (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b8aefc43dae4d46ba2901af97fff11, type: 3}
@@ -1716,10 +1747,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
         type: 3}
       propertyPath: m_Name
       value: Canopy_Beam_Short (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d4c14423206ca4a960169db782a441, type: 3}
@@ -1806,10 +1847,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: d5a74b65beed6ab45b18e316a6d4f02f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -6706838754529431036, guid: d5a74b65beed6ab45b18e316a6d4f02f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: d5a74b65beed6ab45b18e316a6d4f02f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d5a74b65beed6ab45b18e316a6d4f02f,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Flower_Rose
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5a74b65beed6ab45b18e316a6d4f02f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: d5a74b65beed6ab45b18e316a6d4f02f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: d5a74b65beed6ab45b18e316a6d4f02f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: d5a74b65beed6ab45b18e316a6d4f02f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142645124001074575, guid: d5a74b65beed6ab45b18e316a6d4f02f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574875749421219900, guid: d5a74b65beed6ab45b18e316a6d4f02f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5a74b65beed6ab45b18e316a6d4f02f, type: 3}
@@ -1890,10 +1976,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: d88bd177a20f8cf499711e2eb5f708eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d88bd177a20f8cf499711e2eb5f708eb,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Camp_Sitting_Log
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d88bd177a20f8cf499711e2eb5f708eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d88bd177a20f8cf499711e2eb5f708eb, type: 3}
@@ -2144,10 +2240,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 0bc40a385250af84d81c9db7a4db3167,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0bc40a385250af84d81c9db7a4db3167,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Tree_Pine_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bc40a385250af84d81c9db7a4db3167,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 0bc40a385250af84d81c9db7a4db3167,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 0bc40a385250af84d81c9db7a4db3167,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 0bc40a385250af84d81c9db7a4db3167,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bc40a385250af84d81c9db7a4db3167, type: 3}
@@ -2228,10 +2349,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 13e280b4d1a751f4b873a6bad61c46e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 13e280b4d1a751f4b873a6bad61c46e2,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13e280b4d1a751f4b873a6bad61c46e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 13e280b4d1a751f4b873a6bad61c46e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 13e280b4d1a751f4b873a6bad61c46e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 13e280b4d1a751f4b873a6bad61c46e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e280b4d1a751f4b873a6bad61c46e2, type: 3}
@@ -2279,7 +2425,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &108173122
 Transform:
@@ -3156,7 +3302,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &110872431
 Transform:
@@ -3274,10 +3420,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 68ab77cba2cd8604591554f2002dc307,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68ab77cba2cd8604591554f2002dc307,
         type: 3}
       propertyPath: m_Name
       value: Stucco_Arch_Half
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68ab77cba2cd8604591554f2002dc307,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6834383366240858724, guid: 68ab77cba2cd8604591554f2002dc307,
         type: 3}
@@ -3588,10 +3744,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6bd78ccee5050334085bef4ae5be4d51,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Tree_Pine_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd78ccee5050334085bef4ae5be4d51, type: 3}
@@ -3684,10 +3870,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -6706838754529431036, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24429ba69f6882342bb8cbc6c32719fe, type: 3}
@@ -3768,10 +3989,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6bd78ccee5050334085bef4ae5be4d51,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Tree_Pine_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd78ccee5050334085bef4ae5be4d51, type: 3}
@@ -3792,7 +4043,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &164642006
 Transform:
@@ -3829,7 +4080,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164642005}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -3945,10 +4196,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6bd78ccee5050334085bef4ae5be4d51,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Tree_Pine_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd78ccee5050334085bef4ae5be4d51, type: 3}
@@ -4029,10 +4310,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a15b6b08ae809944eb856fd35dd681d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a15b6b08ae809944eb856fd35dd681d7,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Mushroom_2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a15b6b08ae809944eb856fd35dd681d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: a15b6b08ae809944eb856fd35dd681d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a15b6b08ae809944eb856fd35dd681d7, type: 3}
@@ -4098,10 +4394,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -6706838754529431036, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24429ba69f6882342bb8cbc6c32719fe, type: 3}
@@ -4188,10 +4519,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Bush_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c5265f5fcf6ea046af558c4b1906aa9, type: 3}
@@ -4416,10 +4757,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Bush_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c5265f5fcf6ea046af558c4b1906aa9, type: 3}
@@ -4584,10 +4935,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: c1d12031ca4b3134c8e85e9ad669b951,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c1d12031ca4b3134c8e85e9ad669b951,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Rock_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c1d12031ca4b3134c8e85e9ad669b951,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d12031ca4b3134c8e85e9ad669b951, type: 3}
@@ -4781,10 +5142,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.23700002
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Bush_3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c5265f5fcf6ea046af558c4b1906aa9, type: 3}
@@ -4865,10 +5236,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 68ab77cba2cd8604591554f2002dc307,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68ab77cba2cd8604591554f2002dc307,
         type: 3}
       propertyPath: m_Name
       value: Stucco_Arch_Half (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68ab77cba2cd8604591554f2002dc307,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6834383366240858724, guid: 68ab77cba2cd8604591554f2002dc307,
         type: 3}
@@ -5026,7 +5407,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &282101461
 Transform:
@@ -5179,10 +5560,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: c1d12031ca4b3134c8e85e9ad669b951,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c1d12031ca4b3134c8e85e9ad669b951,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Rock_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c1d12031ca4b3134c8e85e9ad669b951,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d12031ca4b3134c8e85e9ad669b951, type: 3}
@@ -5511,10 +5902,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 50ad409f056e8b043a470349200ba8b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 50ad409f056e8b043a470349200ba8b8,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Rock_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 50ad409f056e8b043a470349200ba8b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50ad409f056e8b043a470349200ba8b8, type: 3}
@@ -5787,10 +6188,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a15b6b08ae809944eb856fd35dd681d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a15b6b08ae809944eb856fd35dd681d7,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Mushroom_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a15b6b08ae809944eb856fd35dd681d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: a15b6b08ae809944eb856fd35dd681d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a15b6b08ae809944eb856fd35dd681d7, type: 3}
@@ -5882,7 +6298,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &333346732
 Transform:
@@ -5920,7 +6336,9 @@ GameObject:
   - component: {fileID: 333704432}
   - component: {fileID: 333704431}
   - component: {fileID: 333704430}
-  m_Layer: 0
+  - component: {fileID: 333704435}
+  - component: {fileID: 333704434}
+  m_Layer: 14
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -5978,13 +6396,6 @@ MonoBehaviour:
   distanceMin: 12
   distanceMax: 30
   smoothTime: 5
-  PosXAnchor: {fileID: 1586055093}
-  NegXAnchor: {fileID: 947381535}
-  PosZAnchor: {fileID: 412314677}
-  NegZAnchor: {fileID: 1949871333}
-  PosYAnchor: {fileID: 1198125467}
-  NegYAnchor: {fileID: 309899830}
-  CurrentAnchor: {fileID: 0}
 --- !u!81 &333704432
 AudioListener:
   m_ObjectHideFlags: 0
@@ -6036,6 +6447,83 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &333704434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333704428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: f62a79b21689afc48bbc8ee555cf4f82, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!114 &333704435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333704428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 333704429}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 16384
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!4 &338155722 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 85ecfdcf1bd8b5049a9e0b94c20b17ee,
@@ -6138,10 +6626,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -6706838754529431036, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_4 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24429ba69f6882342bb8cbc6c32719fe, type: 3}
@@ -6151,98 +6674,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2088937709}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &349204479
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 349204480}
-  - component: {fileID: 349204481}
-  m_Layer: 0
-  m_Name: Directional Light (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &349204480
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349204479}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 6.7408295, y: 15.38175, z: 10.297387}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1876461290}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!108 &349204481
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349204479}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 1
-  m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 2
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 0.57
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 1
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1001 &357946803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6305,10 +6736,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 5692e01d21f973d4caae05ab1b69f3ff,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5692e01d21f973d4caae05ab1b69f3ff,
         type: 3}
       propertyPath: m_Name
       value: Dirt_Gathered_Straight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5692e01d21f973d4caae05ab1b69f3ff,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5692e01d21f973d4caae05ab1b69f3ff, type: 3}
@@ -6746,10 +7187,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
         type: 3}
       propertyPath: m_Name
       value: Canopy_Beam_Short (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d4c14423206ca4a960169db782a441, type: 3}
@@ -6821,10 +7272,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6bd78ccee5050334085bef4ae5be4d51,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Tree_Pine_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd78ccee5050334085bef4ae5be4d51, type: 3}
@@ -7295,10 +7776,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
         type: 3}
       propertyPath: m_Name
       value: Canopy_Beam_Short (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d4c14423206ca4a960169db782a441, type: 3}
@@ -7741,7 +8232,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &537605484
 Transform:
@@ -7782,7 +8273,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &540734518
 Transform:
@@ -7828,7 +8319,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540734517}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -8758,7 +9249,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &547163836
 Transform:
@@ -9265,6 +9756,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4723740034965742994, guid: a5d4c14423206ca4a960169db782a441,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -9274,6 +9770,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canopy_Beam_Short (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d4c14423206ca4a960169db782a441, type: 3}
@@ -9877,10 +10378,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -6706838754529431036, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24429ba69f6882342bb8cbc6c32719fe, type: 3}
@@ -9961,10 +10497,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
         type: 3}
       propertyPath: m_Name
       value: Stone_Pillar_Base (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b8aefc43dae4d46ba2901af97fff11, type: 3}
@@ -10051,10 +10597,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 5c3f40ebda022244faac17a592854860,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5c3f40ebda022244faac17a592854860,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Mushroom_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5c3f40ebda022244faac17a592854860,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 5c3f40ebda022244faac17a592854860,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c3f40ebda022244faac17a592854860, type: 3}
@@ -10148,7 +10709,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh66944
+  m_Name: pb_Mesh35286
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10157,10 +10718,10 @@ Mesh:
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 136
+    vertexCount: 100
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 2.6147163, y: 2.625367, z: -0.6950514}
+      m_Extent: {x: 2.1578753, y: 2.1814048, z: 0.3049509}
   m_Shapes:
     vertices: []
     shapes: []
@@ -10177,10 +10738,10 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600180019001a0019001b001a001c001d001e001d001f001e00200021002200210023002200240025002600250027002600280029002a0029002b002a002c002d002e002d002f002e00300031003200310033003200340035003600350037003600380039003a0039003b003a003c003d003e003d003f003e00400041004200410043004200440045004600450047004600480049004a0049004b004a004c004d004e004d004f004e00500051005200510053005200540055005600550057005600580059005a0059005b005a005c005d005e005d005f005e00600061006200610063006200640065006600650067006600680069006a0069006b006a006c006d006e006d006f006e00700071007200710073007200740075007600750077007600780079007a0079007b007a007c007d007e007d007f007e00800081008200810083008200840085008600850087008600
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e001000110012001100130012001400150016001500170016000200030018000300190018000e000f001a000f001b001a001c001d001e001d001f001e000a000b0020000b00210020001800190022001900230022001a001b0024001b00250024002600270028002700290028002a0021002b0021002c002b002d002e002f002e0030002f002300190031001900320031002a002b0033002b003400330013001100350011003600350017001500370015003800370039003a003b003a003c003b003d000a003e000a003f003e004000410042004100430042002f0030004400300045004400310032004600320047004600330034004800340049004800350036004a0036004b004a00370038004c0038004d004c003b003c004e003c004f004e003e005000510050005200510053005400550054005600550057005800590058005a0059005b003f005c003f005d005c003b004e005e004e005f005e00600061006200610063006200
   m_VertexData:
     serializedVersion: 3
-    m_VertexCount: 136
+    m_VertexCount: 100
     m_Channels:
     - stream: 0
       offset: 0
@@ -10200,6 +10761,10 @@ Mesh:
       dimension: 0
     - stream: 0
       offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 48
       format: 0
       dimension: 2
     - stream: 0
@@ -10234,12 +10799,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 6528
-    _typelessdata: 0be7e93e064fe33e40bbc7be00000000000000000000803f000080bf0000000000000000000080bf0be7e9be064fe33effff7f3f064fe33e40bbc7be00000000000000000000803f000080bf0000000000000000000080bfffff7fbf064fe33e0be7e93e0000803f40bbc7be00000000000000000000803f000080bf0000000000000000000080bf0be7e9be0000803fffff7f3f0000803f40bbc7be00000000000000000000803f000080bf0000000000000000000080bfffff7fbf0000803f12b99840064fe33e5cbbc7be0000803f000000000000000000000000000000000000803f000080bf5cbbc7be064fe33e12b99840074fe33e0c0080bf0000803f000000000000000000000000000000000000803f000080bf0c0080bf074fe33e12b998400000803f5cbbc7be0000803f000000000000000000000000000000000000803f000080bf5cbbc7be0000803f12b998400000803f0c0080bf0000803f000000000000000000000000000000000000803f000080bf0c0080bf0000803fffff7f3f074fe33efcff7fbf9de8d3284233e6b4000080bf0000803f9ae853289ae8d328000080bfffff7f3f154fe33e0be7e93e064fe33efcff7fbf8aa86bb4423366b4000080bf0000803f9ae8d3278aa86bb4000080bf0be7e93e144fe33e0000803f0000803f000080bf8aa86bb4423366b4000080bf0000803f9ae8d3278aa86bb4000080bf0000803f0400803f0be7e93e0000803ffcff7fbf8ba8ebb400000000000080bf0000803f000000008ba8ebb4000080bf0be7e93e0400803f0be7e93e064fe33efcff7fbf000080bf00000000000000000000000000000000000080bf000080bffcff7f3f064fe33e0be7e93e064fe33e40bbc7be000080bf00000000000000000000000000000000000080bf000080bf40bbc73e064fe33e0be7e93e0000803ffcff7fbf000080bf00000000000000000000000000000000000080bf000080bffcff7f3f0000803f0be7e93e0000803f40bbc7be000080bf00000000000000000000000000000000000080bf000080bf40bbc73e0000803f0be7e93e13d199405cbbc7be000000000000803f000000000000803f0000000000000000000080bf0be7e93e5cbbc7bef8ff7f3f13d199405cbbc7be000000000000803f000000000000803f0000000000000000000080bff8ff7f3f5cbbc7be0be7e93e13d199400c0080bf000000000000803f000000000000803f0000000000000000000080bf0be7e93e0c0080bff8ff7f3f13d199400c0080bf000000000000803f000000000000803f0000000000000000000080bff8ff7f3f0c0080bf0be7e93e064fe33efcff7fbf8ca86b33000080bf00000000000080bf8ca86bb300000000000080bf0ce7e9befcff7fbfffff7f3f074fe33efcff7fbf8ca8eb32000080bfe7ded1b2000080bf8ca8ebb2e5de519a000080bfffff7fbffcff7fbf0be7e93e064fe33e40bbc7be8ca8eb32000080bfe7ded1b2000080bf8ca8ebb2e5de519a000080bf0ce7e9be40bbc7beffff7f3f064fe33e40bbc7be00000000000080bfe7de51b3000080bf0000000000000000000080bfffff7fbf40bbc7be0be7e93e0000803f40bbc7be00000000b1f68a340000803f000080bf0000000000000000000080bf0be7e9be0100803fffff7f3f0000803f40bbc7be00000000b1f68a340000803f000080bf0000000000000000000080bfffff7fbf0100803f0be7e93ee72987405cbbc7be00000000b1f68a340000803f000080bf0000000000000000000080bf0be7e9bee7298740f8ff7f3fe72987405cbbc7be00000000b1f68a340000803f000080bf0000000000000000000080bff8ff7fbfe72987400be7e93e0000803ffcff7fbf000080bf00000000000000000000000000000000000080bf000080bffcff7f3f0000803f0be7e93e0000803f40bbc7be000080bf00000000000000000000000000000000000080bf000080bf40bbc73e0000803f0be7e93ee7298740050080bf000080bf00000000000000000000000000000000000080bf000080bf0500803fe72987400be7e93ee72987405cbbc7be000080bf00000000000000000000000000000000000080bf000080bf5cbbc73ee7298740ffff7f3f0000803f40bbc7be0000803fb3f60a34e2ded133e2ded1b3000000000000803f000080bf43bbc7befeff7f3f0000803f0000803f000080bf0000803f3439ee33eade5134eade51b4000000000000803f000080bf010080bffeff7f3ff8ff7f3fe72987405cbbc7be0000803f3439ee33eade5134eade51b4000000000000803f000080bf5fbbc7bee7298740fbff7f3fe7298740030080bf0000803f0185c63331679d3431679db40185461d0000803f000080bf040080bfe72987400000803f0000803f000080bf8ca8ebb43539eeb3000080bf0000803f000000008ca8ebb4000080bf0400803f0100803f0be7e93e0000803ffcff7fbf0000c029fd8446b4000080bf0000803ffd84469e0000c029000080bf1ae7e93e0100803ffbff7f3fe7298740030080bf0000c029fd8446b4000080bf0000803ffd84469e0000c029000080bf0100803fe72987400be7e93ee7298740050080bf92a8eb34b0f68ab4000080bf0000803f0000000092a8eb34000080bf1ae7e93ee72987400be7e93ee72987405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf0be7e9bee7298740f8ff7f3fe72987405cbbc7be00000000000000000000803f000080bf0000000000000000000080bff8ff7fbfe72987400be7e93e13d199405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf0be7e9be13d19940f8ff7f3f13d199405cbbc7be00000000000000000000803f000080bf0000000000000000000080bff8ff7fbf13d199400be7e93ee7298740050080bf000080bf00000000000000000000000000000000000080bf000080bf0500803fe72987400be7e93ee72987405cbbc7be000080bf00000000000000000000000000000000000080bf000080bf5cbbc73ee72987400be7e93e13d199400c0080bf000080bf00000000000000000000000000000000000080bf000080bf0c00803f13d199400be7e93e13d199405cbbc7be000080bf00000000000000000000000000000000000080bf000080bf5cbbc73e13d1994011b99840e72987405cbbc7be0000803f000000000000000000000000000000000000803f000080bf5cbbc7bee729874011b99840e72987400c0080bf0000803f000000000000000000000000000000000000803f000080bf0c0080bfe729874011b9984013d199405cbbc7be0000803f000000000000000000000000000000000000803f000080bf5cbbc7be13d1994011b9984013d19940130080bf0000803f000000000000000000000000000000000000803f000080bf130080bf13d19940fbff7f3fe7298740030080bf93a8eb34ad09f7b5000080bf0000803f0000000093a8eb34000080bff4ff7f3feb2987400be7e93ee7298740050080bf93a86b34d396dbb5000080bf0000803fd496db9e93a86b34000080bffce6e93eeb298740f8ff7f3f13d199400c0080bf93a86b34d396dbb5000080bf0000803fd496db9e93a86b34000080bff1ff7f3f17d199400be7e93e13d199400c0080bf00000000f923c0b5000080bf0000803f0000000000000000000080bffce6e93e17d19940f8ff7f3fe72987405cbbc7be00000000000080bf00000000000080bf0000000000000000000080bff8ff7fbf5cbbc7befbff7f3fe7298740030080bf00000000000080bf00000000000080bf0000000000000000000080bffbff7fbf030080bf224b8740e72987405cbbc7be00000000000080bf00000000000080bf0000000000000000000080bf224b87c05cbbc7be224b8740e7298740080080bf00000000000080bf00000000000080bf0000000000000000000080bf224b87c0080080bff8ff7f3f13d199405cbbc7be00000000000000000000803f000080bf0000000000000000000080bff8ff7fbf13d19940f8ff7f3fe72987405cbbc7be00000000000000000000803f000080bf0000000000000000000080bff8ff7fbfe7298740224b874013d199405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf224b87c013d19940224b8740e72987405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf224b87c0e7298740fbff7f3fe7298740030080bf1e4546b4ae09f7b5000080bf0000803fac09f79e1e4546b4000080bffeff7f3feb298740f8ff7f3f13d199400c0080bf1e45c6b38c6ab2b5000080bf0000803f8c6a321e1e45c6b3000080bffbff7f3f17d19940224b8740e7298740080080bf1e45c6b38c6ab2b5000080bf0000803f8c6a321e1e45c6b3000080bf224b8740eb298740224b874013d199400c0080bf00000000d4965bb5000080bf0000803f0000000000000000000080bf224b874017d19940f8ff7f3f13d199400c0080bf000000000000803f000000000000803f0000000000000000000080bff8ff7f3f0c0080bff8ff7f3f13d199405cbbc7be000000000000803f000000000000803f0000000000000000000080bff8ff7f3f5cbbc7be224b874013d199400c0080bf000000000000803f000000000000803f0000000000000000000080bf224b87400c0080bf224b874013d199405cbbc7be000000000000803f000000000000803f0000000000000000000080bf224b87405cbbc7beffff7f3f064fe33e40bbc7be7c8f63a8000080bfe7de51b3000080bf7c8f6328e8de5190000080bfffff7fbf41bbc7beffff7f3f074fe33efcff7fbfbf9d9eb1000080bfe7ded1b2000080bfbf9d9e3100000000000080bfffff7fbffcff7fbf234b8740064fe33e5cbbc7bebf9d9eb1000080bfe7ded1b2000080bfbf9d9e3100000000000080bf234b87c05dbbc7be234b8740064fe33e050080bfb19d1eb2000080bf00000000000080bfb19d1e3200000000000080bf234b87c0050080bfffff7f3f0000803f40bbc7befbc98a34000000000000803f000080bf00000000fbc98a34000080bf000080bf0000803fffff7f3f064fe33e40bbc7befbc98a34000000000000803f000080bf00000000fbc98a34000080bf000080bf064fe33e234b87400000803f5cbbc7befbc98a34000000000000803f000080bf00000000fbc98a34000080bf234b87c00000803f234b8740064fe33e5cbbc7befbc98a34000000000000803f000080bf00000000fbc98a34000080bf234b87c0064fe33effff7f3f074fe33efcff7fbffbc98ab44133e6b4000080bf0000803f6ea10ea7fbc98ab4000080bf0200803f154fe33e0000803f0000803f000080bf1d4546b400000000000080bf0000803f6ea18ea61d4546b4000080bf0200803f0400803f234b8740064fe33e050080bf1d4546b400000000000080bf0000803f6ea18ea61d4546b4000080bf244b8740144fe33e234b87400000803f030080bf89ecedb34133e634000080bf0000803f0000000089ecedb3000080bf244b87400400803f0000803f0000803f000080bf000000000000803f000000000000803f0000000000000000000080bf0000803f000080bfffff7f3f0000803f40bbc7be000000000000803f000000000000803f0000000000000000000080bfffff7f3f40bbc7be234b87400000803f030080bf000000000000803f000000000000803f0000000000000000000080bf234b8740030080bf234b87400000803f5cbbc7be000000000000803f000000000000803f0000000000000000000080bf234b87405cbbc7be224b8740e72987405cbbc7be00000000000080bf00000000000080bf0000000000000000000080bf224b87c05cbbc7be224b8740e7298740080080bf00000000000080bf00000000000080bf0000000000000000000080bf224b87c0080080bf11b99840e72987405cbbc7be00000000000080bf00000000000080bf0000000000000000000080bf11b998c05cbbc7be11b99840e72987400c0080bf00000000000080bf00000000000080bf0000000000000000000080bf11b998c00c0080bf224b874013d199405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf224b87c013d19940224b8740e72987405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf224b87c0e729874011b9984013d199405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf11b998c013d1994011b99840e72987405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf11b998c0e7298740224b8740e7298740080080bf3d016bb5d3965bb5000080bf0000803f000000003d016bb5000080bf244b8740e9298740224b874013d199400c0080bfda90a1b5b1f796b5000080bf0000803f00000000da90a1b5000080bf244b874015d1994011b99840e72987400c0080bfda90a1b5b1f796b5000080bf0000803f00000000da90a1b5000080bf13b99840e929874011b9984013d19940130080bf16a1cdb5f923c0b5000080bf0000803ff92340a016a1cdb5000080bf13b9984015d19940224b874013d199400c0080bf000000000000803f000000000000803f0000000000000000000080bf224b87400c0080bf224b874013d199405cbbc7be000000000000803f000000000000803f0000000000000000000080bf224b87405cbbc7be11b9984013d19940130080bf000000000000803f000000000000803f0000000000000000000080bf11b99840130080bf11b9984013d199405cbbc7be000000000000803f000000000000803f0000000000000000000080bf11b998405cbbc7be234b8740064fe33e5cbbc7be00000000000080bf00000000000080bf0000000000000000000080bf234b87c05cbbc7be234b8740064fe33e050080bf2901eb32000080bfd5ded1b2000080bf2901ebb2d5de519a000080bf234b87c0050080bf12b99840064fe33e5cbbc7be2901eb32000080bfd5ded1b2000080bf2901ebb2d5de519a000080bf12b998c05cbbc7be12b99840074fe33e0c0080bf29016b33000080bfd5de51b3000080bf29016bb3d5de519b000080bf12b998c00c0080bf234b87400000803f5cbbc7be00000000000000000000803f000080bf0000000000000000000080bf234b87c00000803f234b8740064fe33e5cbbc7be00000000000000000000803f000080bf0000000000000000000080bf234b87c0064fe33e12b998400000803f5cbbc7be00000000000000000000803f000080bf0000000000000000000080bf12b998c00000803f12b99840064fe33e5cbbc7be00000000000000000000803f000080bf0000000000000000000080bf12b998c0064fe33e234b8740064fe33e050080bf16a1cdb54133e634000080bf0000803f0000000016a1cdb5000080bf264b8740f84ee33e234b87400000803f030080bf3e01ebb541336634000080bf0000803f4133e61e3e01ebb5000080bf264b8740f9ff7f3f12b99840074fe33e0c0080bf3e01ebb541336634000080bf0000803f4133e61e3e01ebb5000080bf15b99840f94ee33e12b998400000803f0c0080bfb33004b600000000000080bf0000803f00000000b33004b6000080bf15b99840f9ff7f3f234b8740dd4587400c0080bf000000000000803f000000000000803f0000000000000000000080bf234b87400c0080bf234b8740dd4587405cbbc7be000000000000803f000000000000803f0000000000000000000080bf234b87405cbbc7be11b99840dd458740130080bf000000000000803f000000000000803f0000000000000000000080bf11b99840130080bf11b99840dd4587405cbbc7be000000000000803f000000000000803f0000000000000000000080bf11b998405cbbc7be234b87400000803f030080bf000080bf00000000000000000000000000000000000080bf000080bf0300803f0000803f234b87400000803f5cbbc7be000080bf00000000000000000000000000000000000080bf000080bf5cbbc73e0000803f234b8740dd4587400c0080bf000080bf00000000000000000000000000000000000080bf000080bf0c00803fdd458740234b8740dd4587405cbbc7be000080bf00000000000000000000000000000000000080bf000080bf5cbbc73edd45874012b998400000803f0c0080bfb23004b61bd18ab4000080bf0000803f1bd18a1fb23004b6000080bf16b998400200803f234b87400000803f030080bf4301ebb5cfa59eb4000080bf0000803fcfa51e1f4301ebb5000080bf274b87400200803f11b99840dd458740130080bf4301ebb5cfa59eb4000080bf0000803fcfa51e1f4301ebb5000080bf15b99840de458740234b8740dd4587400c0080bf22a1cdb5837ab2b4000080bf0000803f0000000022a1cdb5000080bf274b8740de458740234b87400000803f5cbbc7be00000000000000000000803f000080bf0000000000000000000080bf234b87c00000803f12b998400000803f5cbbc7be00000000000000000000803f000080bf0000000000000000000080bf12b998c00000803f234b8740dd4587405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf234b87c0dd45874011b99840dd4587405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf11b998c0dd45874012b998400000803f5cbbc7be0000803fcaa51e340000000000000000000000000000803f000080bf5cbbc7bef4ff7f3f12b998400000803f0c0080bf0000803fcaa51e340000000000000000000000000000803f000080bf0c0080bff4ff7f3f11b99840dd4587405cbbc7be0000803fcaa51e340000000000000000000000000000803f000080bf5cbbc7bedc45874011b99840dd458740130080bf0000803fcaa51e340000000000000000000000000000803f000080bf130080bfdc458740
+    m_DataSize: 5600
+    _typelessdata: 0be7e93e064fe33e40bbc7be00000000000000000000803f000080bf0000000000000000000080bf0be7e9be064fe33eb6e7fa3e16d7a33cffff7f3f064fe33e40bbc7be00000000000000000000803f000080bf0000000000000000000080bfffff7fbf064fe33eb6e7fa3e13cfa03d0be7e93e0000803f40bbc7be00000000000000000000803f000080bf0000000000000000000080bf0be7e9be0000803f853bdc3e1ad7a33cffff7f3f0000803f40bbc7be00000000000000000000803f000080bf0000000000000000000080bfffff7fbf0000803f853bdc3e12cfa03d12b99840064fe33e5cbbc7be0000803f000000000000000000000000000000000000803f000080bf5cbbc7be064fe33e12d7a33c21ec533f12b99840074fe33e0c0080bf0000803f000000000000000000000000000000000000803f000080bf0c0080bf074fe33e0bd7a33cb819433f12b998400000803f5cbbc7be0000803f000000000000000000000000000000000000803f000080bf5cbbc7be0000803f80a6a33d21ec533f12b998400000803f0c0080bf0000803f000000000000000000000000000000000000803f000080bf0c0080bf0000803f7ea6a33db819433fffff7f3f074fe33efcff7fbf9de8d3284233e6b4000080bf0000803f9ae853289ae8d328000080bfffff7f3f154fe33e9492023f11cfa03d0be7e93e064fe33efcff7fbf8aa86bb4423366b4000080bf0000803f9ae8d3278aa86bb4000080bf0be7e93e144fe33e9392023f19d7a33c0000803f0000803f000080bf8aa86bb4423366b4000080bf0000803f9ae8d3278aa86bb4000080bf0000803f0400803face8113f10cfa03d0be7e93e0000803ffcff7fbf8ba8ebb400000000000080bf0000803f000000008ba8ebb4000080bf0be7e93e0400803face8113f16d7a33c0be7e93e064fe33efcff7fbf000080bf00000000000000000000000000000000000080bf000080bffcff7f3f064fe33eafe7fa3e5146013f0be7e93e064fe33e40bbc7be000080bf00000000000000000000000000000000000080bf000080bf40bbc73e064fe33eafe7fa3eb918123f0be7e93e0000803ffcff7fbf000080bf00000000000000000000000000000000000080bf000080bffcff7f3f0000803f7f3bdc3e5146013f0be7e93e0000803f40bbc7be000080bf00000000000000000000000000000000000080bf000080bf40bbc73e0000803f7f3bdc3eb918123f0be7e93e13d199405cbbc7be000000000000803f000000000000803f0000000000000000000080bf0be7e93e5cbbc7be274ff83efefa3d3ff8ff7f3f13d199405cbbc7be000000000000803f000000000000803f0000000000000000000080bff8ff7f3f5cbbc7bed658da3efefa3d3f0be7e93e13d199400c0080bf000000000000803f000000000000803f0000000000000000000080bf0be7e93e0c0080bf274ff83e95282d3ff8ff7f3f13d199400c0080bf000000000000803f000000000000803f0000000000000000000080bff8ff7f3f0c0080bfd658da3e95282d3f0be7e93e064fe33efcff7fbf8ca86b33000080bf00000000000080bf8ca86bb300000000000080bf0ce7e9befcff7fbf0bd7a33c7337173fffff7f3f074fe33efcff7fbf8ca8eb32000080bfe7ded1b2000080bf8ca8ebb2e5de519a000080bfffff7fbffcff7fbf0fcfa03d7337173f0be7e93e064fe33e40bbc7be8ca8eb32000080bfe7ded1b2000080bf8ca8ebb2e5de519a000080bf0ce7e9be40bbc7be0fd7a33cdb09283fffff7f3f064fe33e40bbc7be00000000000080bfe7de51b3000080bf0000000000000000000080bfffff7fbf40bbc7be10cfa03ddb09283f0be7e93ee72987405cbbc7be00000000b1f68a340000803f000080bf0000000000000000000080bf0be7e9bee72987404994a93d0bd7a33cf8ff7f3fe72987405cbbc7be00000000b1f68a340000803f000080bf0000000000000000000080bff8ff7fbfe72987404994a93d0dcfa03d0be7e93ee7298740050080bf000080bf00000000000000000000000000000000000080bf000080bf0500803fe72987403e94a93d5046013f0be7e93ee72987405cbbc7be000080bf00000000000000000000000000000000000080bf000080bf5cbbc73ee72987403e94a93db718123fffff7f3f0000803f40bbc7be0000803fb3f60a34e2ded133e2ded1b3000000000000803f000080bf43bbc7befeff7f3f9092023ff9fa3d3f0000803f0000803f000080bf0000803f3439ee33eade5134eade51b4000000000000803f000080bf010080bffeff7f3f8f92023f92282d3ff8ff7f3fe72987405cbbc7be0000803f3439ee33eade5134eade51b4000000000000803f000080bf5fbbc7bee7298740c97d5b3ff8fa3d3ffbff7f3fe7298740030080bf0000803f0185c63331679d3431679db40185461d0000803f000080bf040080bfe7298740c97d5b3f91282d3ffbff7f3fe7298740030080bf0000c029fd8446b4000080bf0000803ffd84469e0000c029000080bf0100803fe7298740e5d36a3f0dcfa03d0be7e93ee7298740050080bf92a8eb34b0f68ab4000080bf0000803f0000000092a8eb34000080bf1ae7e93ee7298740e5d36a3f19d7a33c0be7e93e13d199405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf0be7e9be13d199400bd7a33c16d7a33cf8ff7f3f13d199405cbbc7be00000000000000000000803f000080bf0000000000000000000080bff8ff7fbf13d1994015d7a33c0ecfa03d0be7e93e13d199400c0080bf000080bf00000000000000000000000000000000000080bf000080bf0c00803f13d199400bd7a33c4e46013f0be7e93e13d199405cbbc7be000080bf00000000000000000000000000000000000080bf000080bf5cbbc73e13d199400bd7a33cb718123f11b99840e72987405cbbc7be0000803f000000000000000000000000000000000000803f000080bf5cbbc7bee72987409ab4603f6f37173f11b99840e72987400c0080bf0000803f000000000000000000000000000000000000803f000080bf0c0080bfe72987400487713f6f37173f11b9984013d199405cbbc7be0000803f000000000000000000000000000000000000803f000080bf5cbbc7be13d199409ab4603f3f4b273f11b9984013d19940130080bf0000803f000000000000000000000000000000000000803f000080bf130080bf13d199400487713f404b273ffbff7f3fe7298740030080bf93a8eb34ad09f7b5000080bf0000803f0000000093a8eb34000080bff4ff7f3feb298740e5d36a3f0dcfa03df8ff7f3f13d199400c0080bf93a86b34d396dbb5000080bf0000803fd496db9e93a86b34000080bff1ff7f3f17d19940b6e77a3f0acfa03d0be7e93e13d199400c0080bf00000000f923c0b5000080bf0000803f0000000000000000000080bffce6e93e17d19940b5e77a3f0bd7a33cf8ff7f3fe72987405cbbc7be00000000000080bf00000000000080bf0000000000000000000080bff8ff7fbf5cbbc7be0bd7a33c42dd693ffbff7f3fe7298740030080bf00000000000080bf00000000000080bf0000000000000000000080bffbff7fbf030080bf15d7a33cdb0a593f224b8740e72987405cbbc7be00000000000080bf00000000000080bf0000000000000000000080bf224b87c05cbbc7be2f4dbc3e42dd693f224b8740e7298740080080bf00000000000080bf00000000000080bf0000000000000000000080bf224b87c0080080bf2f4dbc3eda0a593f224b874013d199405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf224b87c013d199400ed7a33c8543da3e224b8740e72987405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf224b87c0e72987404794a93d8443da3e224b8740e7298740080080bf1e45c6b38c6ab2b5000080bf0000803f8c6a321e1e45c6b3000080bf224b8740eb298740e5d36a3f7e43da3e224b874013d199400c0080bf00000000d4965bb5000080bf0000803f0000000000000000000080bf224b874017d19940b5e77a3f7e43da3e224b874013d199400c0080bf000000000000803f000000000000803f0000000000000000000080bf224b87400c0080bf5c24a13d95282d3f224b874013d199405cbbc7be000000000000803f000000000000803f0000000000000000000080bf224b87405cbbc7be5d24a13dfefa3d3f234b8740064fe33e5cbbc7bebf9d9eb1000080bfe7ded1b2000080bfbf9d9e3100000000000080bf234b87c05dbbc7be8343da3eda09283f234b8740064fe33e050080bfb19d1eb2000080bf00000000000080bfb19d1e3200000000000080bf234b87c0050080bf8343da3e7237173fffff7f3f0000803f40bbc7befbc98a34000000000000803f000080bf00000000fbc98a34000080bf000080bf0000803f853bdc3e12cfa03dffff7f3f064fe33e40bbc7befbc98a34000000000000803f000080bf00000000fbc98a34000080bf000080bf064fe33eb6e7fa3e13cfa03d234b87400000803f5cbbc7befbc98a34000000000000803f000080bf00000000fbc98a34000080bf234b87c00000803f813bdc3e8643da3e234b8740064fe33e5cbbc7befbc98a34000000000000803f000080bf00000000fbc98a34000080bf234b87c0064fe33eb2e7fa3e8643da3effff7f3f074fe33efcff7fbffbc98ab44133e6b4000080bf0000803f6ea10ea7fbc98ab4000080bf0200803f154fe33e9492023f11cfa03d234b8740064fe33e050080bf1d4546b400000000000080bf0000803f6ea18ea61d4546b4000080bf244b8740144fe33e9392023f8243da3e234b87400000803f030080bf89ecedb34133e634000080bf0000803f0000000089ecedb3000080bf244b87400400803face8113f8143da3e0000803f0000803f000080bf000000000000803f000000000000803f0000000000000000000080bf0000803f000080bf6c9a5b3f4f46013fffff7f3f0000803f40bbc7be000000000000803f000000000000803f0000000000000000000080bfffff7f3f40bbc7be6c9a5b3fb718123f234b87400000803f030080bf000000000000803f000000000000803f0000000000000000000080bf234b8740030080bf8f92023f4e46013f234b87400000803f5cbbc7be000000000000803f000000000000803f0000000000000000000080bf234b87405cbbc7be8f92023fb518123f11b99840e72987405cbbc7be00000000000080bf00000000000080bf0000000000000000000080bf11b998c05cbbc7bed658da3e42dd693f11b99840e72987400c0080bf00000000000080bf00000000000080bf0000000000000000000080bf11b998c00c0080bfd558da3eda0a593f11b9984013d199405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf11b998c013d1994013d7a33c2b4ff83e11b99840e72987405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf11b998c0e72987404994a93d2b4ff83e11b99840e72987400c0080bfda90a1b5b1f796b5000080bf0000803f00000000da90a1b5000080bf13b99840e9298740e5d36a3f244ff83e11b9984013d19940130080bf16a1cdb5f923c0b5000080bf0000803ff92340a016a1cdb5000080bf13b9984015d19940b5e77a3f244ff83e11b9984013d19940130080bf000000000000803f000000000000803f0000000000000000000080bf11b99840130080bf0bd7a33c93282d3f11b9984013d199405cbbc7be000000000000803f000000000000803f0000000000000000000080bf11b998405cbbc7be0fd7a33cfefa3d3f12b99840064fe33e5cbbc7be2901eb32000080bfd5ded1b2000080bf2901ebb2d5de519a000080bf12b998c05cbbc7be2a4ff83ed909283f12b99840074fe33e0c0080bf29016b33000080bfd5de51b3000080bf29016bb3d5de519b000080bf12b998c00c0080bf294ff83e7137173f12b998400000803f5cbbc7be00000000000000000000803f000080bf0000000000000000000080bf12b998c00000803f813bdc3e2c4ff83e12b99840064fe33e5cbbc7be00000000000000000000803f000080bf0000000000000000000080bf12b998c0064fe33eb2e7fa3e2c4ff83e234b87400000803f030080bf3e01ebb541336634000080bf0000803f4133e61e3e01ebb5000080bf264b8740f9ff7f3face8113f8143da3e12b99840074fe33e0c0080bf3e01ebb541336634000080bf0000803f4133e61e3e01ebb5000080bf15b99840f94ee33e9392023f284ff83e12b998400000803f0c0080bfb33004b600000000000080bf0000803f00000000b33004b6000080bf15b99840f9ff7f3face8113f284ff83e234b8740dd4587400c0080bf000000000000803f000000000000803f0000000000000000000080bf234b87400c0080bf25b9603f4e46013f234b8740dd4587405cbbc7be000000000000803f000000000000803f0000000000000000000080bf234b87405cbbc7be8f8b713f4e46013f11b99840dd458740130080bf000000000000803f000000000000803f0000000000000000000080bf11b99840130080bf24b9603f214c103f11b99840dd4587405cbbc7be000000000000803f000000000000803f0000000000000000000080bf11b998405cbbc7be8f8b713f214c103f234b87400000803f030080bf000080bf00000000000000000000000000000000000080bf000080bf0300803f0000803fe1955b3f7137173f234b87400000803f5cbbc7be000080bf00000000000000000000000000000000000080bf000080bf5cbbc73e0000803fe1955b3fd909283f234b8740dd4587400c0080bf000080bf00000000000000000000000000000000000080bf000080bf0c00803fdd4587408f92023f6f37173f234b8740dd4587405cbbc7be000080bf00000000000000000000000000000000000080bf000080bf5cbbc73edd4587408f92023fd809283f12b998400000803f0c0080bfb23004b61bd18ab4000080bf0000803f1bd18a1fb23004b6000080bf16b998400200803face8113f284ff83e11b99840dd458740130080bf4301ebb5cfa59eb4000080bf0000803fcfa51e1f4301ebb5000080bf15b99840de458740feeb6a3f264ff83e234b8740dd4587400c0080bf22a1cdb5837ab2b4000080bf0000803f0000000022a1cdb5000080bf274b8740de458740feeb6a3f8043da3e234b8740dd4587405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf234b87c0dd4587409cd3a83d8243da3e11b99840dd4587405cbbc7be00000000000000000000803f000080bf0000000000000000000080bf11b998c0dd4587409bd3a83d284ff83e12b998400000803f5cbbc7be0000803fcaa51e340000000000000000000000000000803f000080bf5cbbc7bef4ff7f3f80a6a33d21ec533f12b998400000803f0c0080bf0000803fcaa51e340000000000000000000000000000803f000080bf0c0080bff4ff7f3f7ea6a33db819433f11b99840dd4587405cbbc7be0000803fcaa51e340000000000000000000000000000803f000080bf5cbbc7bedc45874047f0da3e21ec533f11b99840dd458740130080bf0000803fcaa51e340000000000000000000000000000803f000080bf130080bfdc45874047f0da3eb619433f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -10456,10 +11017,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
         type: 3}
       propertyPath: m_Name
       value: Canopy_Beam_Short (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d4c14423206ca4a960169db782a441, type: 3}
@@ -10620,10 +11191,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
         type: 3}
       propertyPath: m_Name
       value: Canopy_Beam_Short (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d4c14423206ca4a960169db782a441, type: 3}
@@ -10710,10 +11291,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
         type: 3}
       propertyPath: m_Name
       value: Canopy_Beam_Short (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d4c14423206ca4a960169db782a441, type: 3}
@@ -10928,10 +11519,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dd6da6c4270ab084795b6a9f341fd9b8,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Tree_Pine_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6da6c4270ab084795b6a9f341fd9b8, type: 3}
@@ -11159,10 +11780,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: de68548850123cb499e7e6e4a601f5b6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: de68548850123cb499e7e6e4a601f5b6,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Branch_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: de68548850123cb499e7e6e4a601f5b6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de68548850123cb499e7e6e4a601f5b6, type: 3}
@@ -11556,10 +12187,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 68ab77cba2cd8604591554f2002dc307,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68ab77cba2cd8604591554f2002dc307,
         type: 3}
       propertyPath: m_Name
       value: Stucco_Arch_Half (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68ab77cba2cd8604591554f2002dc307,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6834383366240858724, guid: 68ab77cba2cd8604591554f2002dc307,
         type: 3}
@@ -11807,10 +12448,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -6706838754529431036, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_4 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24429ba69f6882342bb8cbc6c32719fe, type: 3}
@@ -12064,10 +12740,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
         type: 3}
       propertyPath: m_Name
       value: Canopy_Beam_Short (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d4c14423206ca4a960169db782a441, type: 3}
@@ -12154,10 +12840,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: d0d3b0eaf2e80304fbb272b045363811,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d0d3b0eaf2e80304fbb272b045363811,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Rock_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0d3b0eaf2e80304fbb272b045363811,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0d3b0eaf2e80304fbb272b045363811, type: 3}
@@ -12264,6 +12960,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4723740034965742994, guid: a5d4c14423206ca4a960169db782a441,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -12273,6 +12974,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canopy_Beam_Short (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d4c14423206ca4a960169db782a441, type: 3}
@@ -12417,7 +13123,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1041869694
 Transform:
@@ -12504,7 +13210,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67368
+  m_Name: pb_Mesh35710
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12559,9 +13265,9 @@ Mesh:
       format: 0
       dimension: 2
     - stream: 0
-      offset: 0
+      offset: 48
       format: 0
-      dimension: 0
+      dimension: 2
     - stream: 0
       offset: 0
       format: 0
@@ -12594,8 +13300,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 3600
-    _typelessdata: 86327ec000000000408fbebe00000000000080bf00000000000080bf0000000000000000000080bf86327e40408fbebe6e8f814000000000408fbebe00000000000080bf00000000000080bf0000000000000000000080bf6e8f81c0408fbebe86327ec000000000c0b14cbe00000000000080bf00000000000080bf0000000000000000000080bf86327e40c0b14cbe6e8f814000000000c0b14cbe00000000000080bf00000000000080bf0000000000000000000080bf6e8f81c0c0b14cbe88327ec05764b440b9b14cbe000000005bf19eb20000803f000080bf0000000000000000000080bf88327e405764b44086327ec000000000c0b14cbe000000005af19eb20000803f000080bfcf813f2455cd6d17000080bf86327e40e00314b12566fdbf5764b440b9b14cbefd2bc63178ec53b20000803f000080bfbf57ff23fd2bc631000080bf2566fd3f5764b4406e8f814000000000c0b14cbefea014325af11eb20000803f000080bfcf813f24fea01432000080bf6e8f81c0dd0314b16e8f8140b094c140c0b14cbefea09432000000000000803f000080bf00000000fea09432000080bf6e8f81c0b094c1406e8f8140b094c140c0b14cbe0000803f000000000000000000000000000000000000803f000080bfc0b14cbeb094c1406e8f814000000000c0b14cbe0000803f000000000000000000000000000000000000803f000080bfc0b14cbe000000006e8f8140b094c140107492be0000803f000000000000000000000000000000000000803f000080bf107492beb094c1406e8f814000000000408fbebe0000803f000000000000000000000000000000000000803f000080bf408fbebe000000006e8f8140b094c140408fbebe0000803f000000000000000000000000000000000000803f000080bf408fbebeb094c1402566fdbf5764b440418fbebe6b7be230d33272b1000080bf0000803f000000006b7be230000080bf2566fdbf5764b4406e8f8140b094c140408fbebe90dca93100000000000080bf0000803f0000000090dca931000080bf6e8f8140b094c1406e8f814000000000408fbebe90dc29311ea635b1000080bf0000803f0000000090dc2931000080bf6e8f8140a67a9d3086327ec000000000408fbebe000000001ea6b5b1000080bf0000803f0000000000000000000080bf86327ec0a67a9d3088327ec05764b440418fbebe000000001fa6b5b1000080bf0000803f0000000000000000000080bf88327ec05764b44088327ec05764b4400f7492be000080bf1da6b5b3000000000000000000000000000080bf000080bf0f74923e5864b44088327ec05764b440418fbebe000080bf1fa6b5b3000000000000000000000000000080bf000080bf418fbe3e5864b44086327ec000000000408fbebe000080bf1ea6b5b3000000000000000000000000000080bf000080bf408fbe3eab5eb43486327ec000000000c0b14cbe000080bf1ea6b5b3000000000000000000000000000080bf000080bfc0b14c3eab5eb43488327ec05764b440b9b14cbe000080bf1ea6b5b3000000000000000000000000000080bf000080bfb9b14c3e5864b4402566fdbf5764b4400f7492be000000000000803f000000000000803f0000000000000000000080bf2566fdbf0f7492be88327ec05764b4400f7492be000000000000803f000000000000803f0000000000000000000080bf88327ec00f7492be88327ec05764b440b9b14cbe000000000000803f000000000000803f0000000000000000000080bf88327ec0b9b14cbe2566fdbf5764b440b9b14cbe000000000000803f000000000000803f0000000000000000000080bf2566fdbfb9b14cbe798f814015d4ff400f7492be000000000000803f000000000000803f0000000000000000000080bf798f81400f7492be2566fdbf15d4ff400f7492be000000000000803f000000000000803f0000000000000000000080bf2566fdbf0f7492be2566fdbf15d4ff40b9b14cbe000000000000803f000000000000803f0000000000000000000080bf2566fdbfb9b14cbe798f814015d4ff40b9b14cbe000000000000803f000000000000803f0000000000000000000080bf798f8140b9b14cbe798f814015d4ff40418fbebe000000000000803f000000000000803f0000000000000000000080bf798f8140418fbebe2566fdbf15d4ff40418fbebe000000000000803f000000000000803f0000000000000000000080bf2566fdbf418fbebe2566fdbf5764b440418fbebe000000000000803f000000000000803f0000000000000000000080bf2566fdbf418fbebe88327ec05764b440418fbebe000000000000803f000000000000803f0000000000000000000080bf88327ec0418fbebe738f814009d4da40418fbebe1a4c8131fb3ba2b2000080bf0000803f000000001a4c8131000080bf738f814009d4da402566fdbf09d4da40418fbebe0000000000000000000080bf0000803f0000000000000000000080bf2566fdbf09d4da402566fdbf5764b440418fbebe000080bf00000000000000000000000000000000000080bf000080bf418fbe3e5764b4402566fdbf5764b4400f7492be000080bf00000000000000000000000000000000000080bf000080bf0f74923e5764b4402566fdbf09d4da40418fbebe000080bf00000000000000000000000000000000000080bf000080bf418fbe3e09d4da402566fdbf09d4da400f7492be000080bf00000000000000000000000000000000000080bf000080bf0f74923e09d4da40738f814009d4da400f7492be0000803ff1ca4ab60000000000000000000000000000803f000080bf0f7492be23d4da40738f814009d4da40418fbebe0000803ff1ca4ab60000000000000000000000000000803f000080bf418fbebe23d4da402566fdbf5764b440b9b14cbe000080bf00000000000000000000000000000000000080bf000080bfb9b14c3e5764b4402566fdbf09d4da40b9b14cbe000080bf00000000000000000000000000000000000080bf000080bfb9b14c3e09d4da40738f814009d4da40b9b14cbe0000803ff0ca4ab60000000000000000000000000000803f000080bfb9b14cbe23d4da402566fdbf09d4da40b9b14cbeffa0143275f48db30000803f000080bf75f48d9affa01432000080bf2566fd3f09d4da40738f814009d4da40b9b14cbe0000000075f40db40000803f000080bf0000000000000000000080bf738f81c009d4da40798f814015d4ff40418fbebe0000000000000000000080bf0000803f0000000000000000000080bf798f814015d4ff402566fdbf15d4ff40418fbebe0000000000000000000080bf0000803f0000000000000000000080bf2566fdbf15d4ff407ffd7ec010d4da40418fbebe000080bf7b675db4000000000000000000000000000080bf000080bf418fbe3e12d4da407ffd7ec010d4da400f7492be000080bf7b675db4000000000000000000000000000080bf000080bf0f74923e12d4da4080fd7ec01dd4ff40418fbebe000080bf7b675db4000000000000000000000000000080bf000080bf418fbe3e1fd4ff4080fd7ec01dd4ff400f7492be000080bf7b675db4000000000000000000000000000080bf000080bf0f74923e1fd4ff40798f814015d4ff400f7492be0000803fa10d26b60000000000000000000000000000803f000080bf0f7492be2ad4ff40798f814015d4ff40418fbebe0000803fa10d26b60000000000000000000000000000803f000080bf418fbebe2ad4ff407ffd7ec010d4da40b9b14cbe000080bf7b675db4000000000000000000000000000080bf000080bfb9b14c3e12d4da4080fd7ec01dd4ff40b9b14cbe000080bf7b675db4000000000000000000000000000080bf000080bfb9b14c3e1fd4ff40798f814015d4ff40b9b14cbe0000803fa10d26b60000000000000000000000000000803f000080bfb9b14cbe2ad4ff402566fdbf15d4ff40b9b14cbe00000000000000000000803f000080bf0000000000000000000080bf2566fd3f15d4ff40798f814015d4ff40b9b14cbe00000000000000000000803f000080bf0000000000000000000080bf798f81c015d4ff402566fdbf09d4da40418fbebe0e7edfb5000080bf00000000000080bf0e7edf3500000000000080bf8566fd3f418fbebe2566fdbf09d4da400f7492be0e7edfb5000080bf00000000000080bf0e7edf3500000000000080bf8566fd3f0f7492be7ffd7ec010d4da40418fbebe0e7edfb5000080bf00000000000080bf0e7edf3500000000000080bfaffd7e40418fbebe7ffd7ec010d4da400f7492be0e7edfb5000080bf00000000000080bf0e7edf3500000000000080bfaffd7e400f7492be80fd7ec01dd4ff40418fbebe0000000000000000000080bf0000803f0000000000000000000080bf80fd7ec01dd4ff407ffd7ec010d4da40418fbebe0000000000000000000080bf0000803f0000000000000000000080bf7ffd7ec010d4da407ffd7ec010d4da40b9b14cbe00000000000000000000803f000080bf0000000000000000000080bf7ffd7e4010d4da4080fd7ec01dd4ff40b9b14cbe00000000000000000000803f000080bf0000000000000000000080bf80fd7e401dd4ff4080fd7ec01dd4ff400f7492be7a6bff350000803f000000000000803f7a6bffb500000000000080bfc0fd7ec00f7492be80fd7ec01dd4ff40418fbebe7a6bff350000803f000000000000803f7a6bffb500000000000080bfc0fd7ec0418fbebe2566fdbf09d4da40b9b14cbe0f7edfb5000080bf00000000000080bf0f7edf3500000000000080bf8566fd3fb9b14cbe7ffd7ec010d4da40b9b14cbe0f7edfb5000080bf00000000000080bf0f7edf3500000000000080bfaffd7e40b9b14cbe80fd7ec01dd4ff40b9b14cbe7a6bff350000803f000000000000803f7a6bffb500000000000080bfc0fd7ec0b9b14cbe
+    m_DataSize: 4200
+    _typelessdata: 86327ec000000000408fbebe00000000000080bf00000000000080bf0000000000000000000080bf86327e40408fbebe45d7a33c0f710a3f6e8f814000000000408fbebe00000000000080bf00000000000080bf0000000000000000000080bf6e8f81c0408fbebe05fefb3e0f710a3f86327ec000000000c0b14cbe00000000000080bf00000000000080bf0000000000000000000080bf86327e40c0b14cbe0bd7a33cc5090d3f6e8f814000000000c0b14cbe00000000000080bf00000000000080bf0000000000000000000080bf6e8f81c0c0b14cbe01fefb3ec5090d3f88327ec05764b440b9b14cbe000000005bf19eb20000803f000080bf0000000000000000000080bf88327e405764b44042d1a93caf27b43e86327ec000000000c0b14cbe000000005af19eb20000803f000080bfcf813f2455cd6d17000080bf86327e40e00314b102d0a93c88d8a33c2566fdbf5764b440b9b14cbefd2bc63178ec53b20000803f000080bfbf57ff23fd2bc631000080bf2566fd3f5764b440ea510d3eb127b43e6e8f814000000000c0b14cbefea014325af11eb20000803f000080bfcf813f24fea01432000080bf6e8f81c0dd0314b19d5dfc3e0bd7a33c6e8f8140b094c140c0b14cbefea09432000000000000803f000080bf00000000fea09432000080bf6e8f81c0b094c140a65dfc3ee493c03e6e8f8140b094c140c0b14cbe0000803f000000000000000000000000000000000000803f000080bfc0b14cbeb094c140e893c03e34c1143f6e8f814000000000c0b14cbe0000803f000000000000000000000000000000000000803f000080bfc0b14cbe000000000bd7a33c34c1143f6e8f8140b094c140107492be0000803f000000000000000000000000000000000000803f000080bf107492beb094c140e193c03ed974133f6e8f814000000000408fbebe0000803f000000000000000000000000000000000000803f000080bf408fbebe000000000bd7a33c7e28123f6e8f8140b094c140408fbebe0000803f000000000000000000000000000000000000803f000080bf408fbebeb094c140e193c03e7d28123f2566fdbf5764b440418fbebe6b7be230d33272b1000080bf0000803f000000006b7be230000080bf2566fdbf5764b440ec275e3faa27b43e6e8f8140b094c140408fbebe90dca93100000000000080bf0000803f0000000090dca931000080bf6e8f8140b094c140924d033ff593c03e6e8f814000000000408fbebe90dc29311ea635b1000080bf0000803f0000000090dc2931000080bf6e8f8140a67a9d308b4d033f3fd8a33c86327ec000000000408fbebe000000001ea6b5b1000080bf0000803f0000000000000000000080bf86327ec0a67a9d30d62d7c3f0bd7a33c88327ec05764b440418fbebe000000001fa6b5b1000080bf0000803f0000000000000000000080bf88327ec05764b440dc2d7c3fa527b43e88327ec05764b4400f7492be000080bf1da6b5b3000000000000000000000000000080bf000080bf0f74923e5864b4400bd7a33c482c1b3f88327ec05764b440418fbebe000080bf1fa6b5b3000000000000000000000000000080bf000080bf418fbe3e5864b44029d7a33cecdf193f86327ec000000000408fbebe000080bf1ea6b5b3000000000000000000000000000080bf000080bf408fbe3eab5eb434a227b43eecdf193f86327ec000000000c0b14cbe000080bf1ea6b5b3000000000000000000000000000080bf000080bfc0b14c3eab5eb434a227b43ea3781c3f88327ec05764b440b9b14cbe000080bf1ea6b5b3000000000000000000000000000080bf000080bfb9b14c3e5864b4400cd7a33ca3781c3f2566fdbf5764b4400f7492be000000000000803f000000000000803f0000000000000000000080bf2566fdbf0f7492be0cd7a33cb6e3223f88327ec05764b4400f7492be000000000000803f000000000000803f0000000000000000000080bf88327ec00f7492bea6920c3eb6e3223f88327ec05764b440b9b14cbe000000000000803f000000000000803f0000000000000000000080bf88327ec0b9b14cbea6920c3e1230243f2566fdbf5764b440b9b14cbe000000000000803f000000000000803f0000000000000000000080bf2566fdbfb9b14cbe0dd7a33c1230243f798f814015d4ff400f7492be000000000000803f000000000000803f0000000000000000000080bf798f81400f7492be0cd7a33cfb05043f2566fdbf15d4ff400f7492be000000000000803f000000000000803f0000000000000000000080bf2566fdbf0f7492be29f2bf3efb05043f2566fdbf15d4ff40b9b14cbe000000000000803f000000000000803f0000000000000000000080bf2566fdbfb9b14cbe2af2bf3e5652053f798f814015d4ff40b9b14cbe000000000000803f000000000000803f0000000000000000000080bf798f8140b9b14cbe0ed7a33c5652053f798f814015d4ff40418fbebe000000000000803f000000000000803f0000000000000000000080bf798f8140418fbebe0bd7a33ca0b9023f2566fdbf15d4ff40418fbebe000000000000803f000000000000803f0000000000000000000080bf2566fdbf418fbebe29f2bf3ea0b9023f2566fdbf5764b440418fbebe000000000000803f000000000000803f0000000000000000000080bf2566fdbf418fbebe0bd7a33c5b97213f88327ec05764b440418fbebe000000000000803f000000000000803f0000000000000000000080bf88327ec0418fbebea6920c3e5b97213f738f814009d4da40418fbebe1a4c8131fb3ba2b2000080bf0000803f000000001a4c8131000080bf738f814009d4da40914d033feb5bd83e2566fdbf09d4da40418fbebe0000000000000000000080bf0000803f0000000000000000000080bf2566fdbf09d4da40e9275e3fe05bd83e2566fdbf5764b440418fbebe000080bf00000000000000000000000000000000000080bf000080bf418fbe3e5764b44096c6b93dca4e293f2566fdbf5764b4400f7492be000080bf00000000000000000000000000000000000080bf000080bf0f74923e5764b44096c6b93d259b2a3f2566fdbf09d4da40418fbebe000080bf00000000000000000000000000000000000080bf000080bf418fbe3e09d4da400bd7a33cca4e293f2566fdbf09d4da400f7492be000080bf00000000000000000000000000000000000080bf000080bf0f74923e09d4da400bd7a33c259b2a3f738f814009d4da400f7492be0000803ff1ca4ab60000000000000000000000000000803f000080bf0f7492be23d4da40d85bd83ed974133f738f814009d4da40418fbebe0000803ff1ca4ab60000000000000000000000000000803f000080bf418fbebe23d4da40d85bd83e7d28123f2566fdbf5764b440b9b14cbe000080bf00000000000000000000000000000000000080bf000080bfb9b14c3e5764b44096c6b93d80e72b3f2566fdbf09d4da40b9b14cbe000080bf00000000000000000000000000000000000080bf000080bfb9b14c3e09d4da400cd7a33c81e72b3f738f814009d4da40b9b14cbe0000803ff0ca4ab60000000000000000000000000000803f000080bfb9b14cbe23d4da40d85bd83e34c1143f2566fdbf09d4da40b9b14cbeffa0143275f48db30000803f000080bf75f48d9affa01432000080bf2566fd3f09d4da40eb510d3ee65bd83e738f814009d4da40b9b14cbe0000000075f40db40000803f000080bf0000000000000000000080bf738f81c009d4da40a45dfc3ed95bd83e798f814015d4ff40418fbebe0000000000000000000080bf0000803f0000000000000000000080bf798f814015d4ff408f4d033fd335fb3e2566fdbf15d4ff40418fbebe0000000000000000000080bf0000803f0000000000000000000080bf2566fdbf15d4ff40e5275e3fc735fb3e7ffd7ec010d4da40418fbebe000080bf7b675db4000000000000000000000000000080bf000080bf418fbe3e12d4da406c5db43d3906313f7ffd7ec010d4da400f7492be000080bf7b675db4000000000000000000000000000080bf000080bf0f74923e12d4da406c5db43d9452323f80fd7ec01dd4ff40418fbebe000080bf7b675db4000000000000000000000000000080bf000080bf418fbe3e1fd4ff400bd7a33c3906313f80fd7ec01dd4ff400f7492be000080bf7b675db4000000000000000000000000000080bf000080bf0f74923e1fd4ff400bd7a33c9452323f798f814015d4ff400f7492be0000803fa10d26b60000000000000000000000000000803f000080bf0f7492be2ad4ff40c135fb3ed974133f798f814015d4ff40418fbebe0000803fa10d26b60000000000000000000000000000803f000080bf418fbebe2ad4ff40c135fb3e7d28123f7ffd7ec010d4da40b9b14cbe000080bf7b675db4000000000000000000000000000080bf000080bfb9b14c3e12d4da406c5db43def9e333f80fd7ec01dd4ff40b9b14cbe000080bf7b675db4000000000000000000000000000080bf000080bfb9b14c3e1fd4ff400cd7a33cef9e333f798f814015d4ff40b9b14cbe0000803fa10d26b60000000000000000000000000000803f000080bfb9b14cbe2ad4ff40c135fb3e34c1143f2566fdbf15d4ff40b9b14cbe00000000000000000000803f000080bf0000000000000000000080bf2566fd3f15d4ff40dd510d3ecf35fb3e798f814015d4ff40b9b14cbe00000000000000000000803f000080bf0000000000000000000080bf798f81c015d4ff40a25dfc3ec335fb3e2566fdbf09d4da40418fbebe0e7edfb5000080bf00000000000080bf0e7edf3500000000000080bf8566fd3f418fbebe8dd0fa3eecdf193f2566fdbf09d4da400f7492be0e7edfb5000080bf00000000000080bf0e7edf3500000000000080bf8566fd3f0f7492be8dd0fa3e482c1b3f7ffd7ec010d4da40418fbebe0e7edfb5000080bf00000000000080bf0e7edf3500000000000080bfaffd7e40418fbebe1365be3eecdf193f7ffd7ec010d4da400f7492be0e7edfb5000080bf00000000000080bf0e7edf3500000000000080bfaffd7e400f7492be1365be3e482c1b3f80fd7ec01dd4ff40418fbebe0000000000000000000080bf0000803f0000000000000000000080bf80fd7ec01dd4ff40a15d7c3fda35fb3e7ffd7ec010d4da40418fbebe0000000000000000000080bf0000803f0000000000000000000080bf7ffd7ec010d4da40a45d7c3ff15bd83e7ffd7ec010d4da40b9b14cbe00000000000000000000803f000080bf0000000000000000000080bf7ffd7e4010d4da4081d7a33ce05bd83e80fd7ec01dd4ff40b9b14cbe00000000000000000000803f000080bf0000000000000000000080bf80fd7e401dd4ff400bd7a33cca35fb3e80fd7ec01dd4ff400f7492be7a6bff350000803f000000000000803f7a6bffb500000000000080bfc0fd7ec00f7492bea25dfc3efb05043f80fd7ec01dd4ff40418fbebe7a6bff350000803f000000000000803f7a6bffb500000000000080bfc0fd7ec0418fbebea25dfc3ea0b9023f2566fdbf09d4da40b9b14cbe0f7edfb5000080bf00000000000080bf0f7edf3500000000000080bf8566fd3fb9b14cbe8dd0fa3ea3781c3f7ffd7ec010d4da40b9b14cbe0f7edfb5000080bf00000000000080bf0f7edf3500000000000080bfaffd7e40b9b14cbe1365be3ea3781c3f80fd7ec01dd4ff40b9b14cbe7a6bff350000803f000000000000803f7a6bffb500000000000080bfc0fd7ec0b9b14cbea25dfc3e5652053f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -13235,10 +13941,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9b55095a79a5e9f4db26c67de80a635d,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b55095a79a5e9f4db26c67de80a635d, type: 3}
@@ -13319,10 +14045,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Bush_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c5265f5fcf6ea046af558c4b1906aa9, type: 3}
@@ -13403,6 +14139,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4723740034965742994, guid: a5d4c14423206ca4a960169db782a441,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -13412,6 +14153,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canopy_Beam_Short
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d4c14423206ca4a960169db782a441, type: 3}
@@ -13498,10 +14244,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 5c3f40ebda022244faac17a592854860,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5c3f40ebda022244faac17a592854860,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Mushroom_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5c3f40ebda022244faac17a592854860,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 5c3f40ebda022244faac17a592854860,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c3f40ebda022244faac17a592854860, type: 3}
@@ -13588,10 +14349,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: bf5fd6a29bc0d44458adfe8fb31be387,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bf5fd6a29bc0d44458adfe8fb31be387,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Bush_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf5fd6a29bc0d44458adfe8fb31be387,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf5fd6a29bc0d44458adfe8fb31be387, type: 3}
@@ -13753,10 +14524,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 5692e01d21f973d4caae05ab1b69f3ff,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5692e01d21f973d4caae05ab1b69f3ff,
         type: 3}
       propertyPath: m_Name
       value: Dirt_Gathered_Straight
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5692e01d21f973d4caae05ab1b69f3ff,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5692e01d21f973d4caae05ab1b69f3ff, type: 3}
@@ -14070,6 +14851,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 9b8d3923df40f724690050d919c77bd7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4723740034965742994, guid: 9b8d3923df40f724690050d919c77bd7,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -14120,6 +14906,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Prop_Barrel_1_Open
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b8d3923df40f724690050d919c77bd7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 9b8d3923df40f724690050d919c77bd7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 9b8d3923df40f724690050d919c77bd7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6834383366240858724, guid: 9b8d3923df40f724690050d919c77bd7,
         type: 3}
@@ -14238,10 +15039,70 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 4ec6c0bb91625c74cbad3e369ef26135,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -6706838754529431036, guid: 4ec6c0bb91625c74cbad3e369ef26135,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -5815978099758559976, guid: 4ec6c0bb91625c74cbad3e369ef26135,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -5732475524947798793, guid: 4ec6c0bb91625c74cbad3e369ef26135,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 4ec6c0bb91625c74cbad3e369ef26135,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4ec6c0bb91625c74cbad3e369ef26135,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Flower_Tulip
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4ec6c0bb91625c74cbad3e369ef26135,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 4ec6c0bb91625c74cbad3e369ef26135,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 4ec6c0bb91625c74cbad3e369ef26135,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 4ec6c0bb91625c74cbad3e369ef26135,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142645124001074575, guid: 4ec6c0bb91625c74cbad3e369ef26135,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6936511483891323913, guid: 4ec6c0bb91625c74cbad3e369ef26135,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574875749421219900, guid: 4ec6c0bb91625c74cbad3e369ef26135,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ec6c0bb91625c74cbad3e369ef26135, type: 3}
@@ -14307,6 +15168,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 5692e01d21f973d4caae05ab1b69f3ff,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4723740034965742994, guid: 5692e01d21f973d4caae05ab1b69f3ff,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -14336,6 +15202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dirt_Gathered_Straight (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5692e01d21f973d4caae05ab1b69f3ff,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5692e01d21f973d4caae05ab1b69f3ff, type: 3}
@@ -14416,10 +15287,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: f1734cad652c0624796892e08e317d6c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: f1734cad652c0624796892e08e317d6c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f1734cad652c0624796892e08e317d6c,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Flower_Daisy
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f1734cad652c0624796892e08e317d6c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: f1734cad652c0624796892e08e317d6c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: f1734cad652c0624796892e08e317d6c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: f1734cad652c0624796892e08e317d6c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1734cad652c0624796892e08e317d6c, type: 3}
@@ -14550,10 +15451,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 5d544178b82b3d44793f50beaabbbd7c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 5d544178b82b3d44793f50beaabbbd7c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d544178b82b3d44793f50beaabbbd7c,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d544178b82b3d44793f50beaabbbd7c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 5d544178b82b3d44793f50beaabbbd7c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 5d544178b82b3d44793f50beaabbbd7c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 5d544178b82b3d44793f50beaabbbd7c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d544178b82b3d44793f50beaabbbd7c, type: 3}
@@ -14640,10 +15571,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: c43c6232fff1d9b45b7f896104adbd1f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c43c6232fff1d9b45b7f896104adbd1f,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Bush_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c43c6232fff1d9b45b7f896104adbd1f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c43c6232fff1d9b45b7f896104adbd1f, type: 3}
@@ -15069,10 +16010,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Bush_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c5265f5fcf6ea046af558c4b1906aa9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c5265f5fcf6ea046af558c4b1906aa9, type: 3}
@@ -15258,10 +16209,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 85ecfdcf1bd8b5049a9e0b94c20b17ee,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 85ecfdcf1bd8b5049a9e0b94c20b17ee,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Stump
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 85ecfdcf1bd8b5049a9e0b94c20b17ee,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85ecfdcf1bd8b5049a9e0b94c20b17ee, type: 3}
@@ -15435,7 +16396,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1311540362
 Transform:
@@ -15557,10 +16518,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 68ab77cba2cd8604591554f2002dc307,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68ab77cba2cd8604591554f2002dc307,
         type: 3}
       propertyPath: m_Name
       value: Stucco_Arch_Half (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68ab77cba2cd8604591554f2002dc307,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6834383366240858724, guid: 68ab77cba2cd8604591554f2002dc307,
         type: 3}
@@ -15838,17 +16809,17 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.9433962, g: 0.806098, b: 0.43164828, a: 1}
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.57
+    m_Strength: 0.2
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -15895,13 +16866,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323509635}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 6.7408295, y: 15.38175, z: 10.297387}
+  m_LocalRotation: {x: 0.6518386, y: -0.19100083, z: 0.17465962, w: 0.7128248}
+  m_LocalPosition: {x: 12.43, y: 23.61, z: 5.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1876461290}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 84.882, y: -30.000002, z: 0}
 --- !u!1001 &1329037297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16054,10 +17025,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6bd78ccee5050334085bef4ae5be4d51,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Tree_Pine_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd78ccee5050334085bef4ae5be4d51, type: 3}
@@ -16138,10 +17139,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -6706838754529431036, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_4 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24429ba69f6882342bb8cbc6c32719fe, type: 3}
@@ -16377,10 +17413,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 5692e01d21f973d4caae05ab1b69f3ff,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5692e01d21f973d4caae05ab1b69f3ff,
         type: 3}
       propertyPath: m_Name
       value: Dirt_Gathered_Straight (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5692e01d21f973d4caae05ab1b69f3ff,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5692e01d21f973d4caae05ab1b69f3ff, type: 3}
@@ -17040,6 +18086,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4723740034965742994, guid: a5d4c14423206ca4a960169db782a441,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -17049,6 +18100,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canopy_Beam_Short (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d4c14423206ca4a960169db782a441, type: 3}
@@ -17135,6 +18191,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 38e157b67f961a04cb636b79c286fbd1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4723740034965742994, guid: 38e157b67f961a04cb636b79c286fbd1,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -17164,6 +18225,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Hollow_Trunk
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38e157b67f961a04cb636b79c286fbd1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 38e157b67f961a04cb636b79c286fbd1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 38e157b67f961a04cb636b79c286fbd1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38e157b67f961a04cb636b79c286fbd1, type: 3}
@@ -17273,6 +18349,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 63e502f9897bc784f860f5f2f792a316,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4723740034965742994, guid: 63e502f9897bc784f860f5f2f792a316,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -17317,6 +18398,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hilly_Terrain_Grass_Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63e502f9897bc784f860f5f2f792a316,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63e502f9897bc784f860f5f2f792a316, type: 3}
@@ -17416,10 +18502,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -54.443
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: de68548850123cb499e7e6e4a601f5b6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: de68548850123cb499e7e6e4a601f5b6,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Branch_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: de68548850123cb499e7e6e4a601f5b6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de68548850123cb499e7e6e4a601f5b6, type: 3}
@@ -17500,10 +18596,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 14dc1c1586aa7ba44b48588ff052465d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 14dc1c1586aa7ba44b48588ff052465d,
         type: 3}
       propertyPath: m_Name
       value: Shared_Prop_Boulder_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14dc1c1586aa7ba44b48588ff052465d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14dc1c1586aa7ba44b48588ff052465d, type: 3}
@@ -17809,10 +18915,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 85ecfdcf1bd8b5049a9e0b94c20b17ee,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 85ecfdcf1bd8b5049a9e0b94c20b17ee,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Stump
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 85ecfdcf1bd8b5049a9e0b94c20b17ee,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85ecfdcf1bd8b5049a9e0b94c20b17ee, type: 3}
@@ -17893,10 +19009,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
         type: 3}
       propertyPath: m_Name
       value: Canopy_Beam_Short (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5d4c14423206ca4a960169db782a441,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5d4c14423206ca4a960169db782a441, type: 3}
@@ -18184,10 +19310,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
         type: 3}
       propertyPath: m_Name
       value: Stone_Pillar_Base (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b8aefc43dae4d46ba2901af97fff11, type: 3}
@@ -18339,6 +19475,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 355d8062bf5aebd45815a724a1e04723,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4723740034965742994, guid: 355d8062bf5aebd45815a724a1e04723,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -18373,6 +19514,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wood_Post_Large (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 355d8062bf5aebd45815a724a1e04723,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 355d8062bf5aebd45815a724a1e04723, type: 3}
@@ -18699,10 +19845,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 5c3f40ebda022244faac17a592854860,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5c3f40ebda022244faac17a592854860,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Mushroom_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5c3f40ebda022244faac17a592854860,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 5c3f40ebda022244faac17a592854860,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c3f40ebda022244faac17a592854860, type: 3}
@@ -18854,7 +20015,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1626301391
 Transform:
@@ -18949,10 +20110,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 5966089763a4e284cab57109d476e7dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5966089763a4e284cab57109d476e7dd,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Rock_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5966089763a4e284cab57109d476e7dd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5966089763a4e284cab57109d476e7dd, type: 3}
@@ -19018,10 +20189,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: c9d129531f0c7b6439ccdd3ea3bef58e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c9d129531f0c7b6439ccdd3ea3bef58e,
         type: 3}
       propertyPath: m_Name
       value: Dirt_Gathered_Corner
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c9d129531f0c7b6439ccdd3ea3bef58e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9d129531f0c7b6439ccdd3ea3bef58e, type: 3}
@@ -19176,10 +20357,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6bd78ccee5050334085bef4ae5be4d51,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Tree_Pine_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 6bd78ccee5050334085bef4ae5be4d51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd78ccee5050334085bef4ae5be4d51, type: 3}
@@ -19373,10 +20584,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: c9d129531f0c7b6439ccdd3ea3bef58e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c9d129531f0c7b6439ccdd3ea3bef58e,
         type: 3}
       propertyPath: m_Name
       value: Dirt_Gathered_Corner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c9d129531f0c7b6439ccdd3ea3bef58e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9d129531f0c7b6439ccdd3ea3bef58e, type: 3}
@@ -19651,10 +20872,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -6706838754529431036, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24429ba69f6882342bb8cbc6c32719fe, type: 3}
@@ -19977,10 +21233,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9b55095a79a5e9f4db26c67de80a635d,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b55095a79a5e9f4db26c67de80a635d, type: 3}
@@ -20046,6 +21322,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 355d8062bf5aebd45815a724a1e04723,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4723740034965742994, guid: 355d8062bf5aebd45815a724a1e04723,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -20080,6 +21361,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wood_Post_Large
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 355d8062bf5aebd45815a724a1e04723,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 355d8062bf5aebd45815a724a1e04723, type: 3}
@@ -20185,10 +21471,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
         type: 3}
       propertyPath: m_Name
       value: Stone_Pillar_Base (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b8aefc43dae4d46ba2901af97fff11, type: 3}
@@ -20281,10 +21577,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 66b5190dd1be692469f22206e0bafc42,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 66b5190dd1be692469f22206e0bafc42,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Branch_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 66b5190dd1be692469f22206e0bafc42,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66b5190dd1be692469f22206e0bafc42, type: 3}
@@ -20305,7 +21611,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1787892520
 Transform:
@@ -20398,6 +21704,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Victory particle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4863941896248104176, guid: 652a77c27d5632f458e792892b323289,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4863941896248104183, guid: 652a77c27d5632f458e792892b323289,
         type: 3}
@@ -20769,10 +22080,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
         type: 3}
       propertyPath: m_Name
       value: Stone_Pillar_Base (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b8aefc43dae4d46ba2901af97fff11, type: 3}
@@ -20859,10 +22180,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 12faba691efb7fc4db8165bd8703fd47,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 12faba691efb7fc4db8165bd8703fd47,
         type: 3}
       propertyPath: m_Name
       value: Shared_Prop_Boulder_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12faba691efb7fc4db8165bd8703fd47,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12faba691efb7fc4db8165bd8703fd47, type: 3}
@@ -20943,10 +22274,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: c43c6232fff1d9b45b7f896104adbd1f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c43c6232fff1d9b45b7f896104adbd1f,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Bush_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c43c6232fff1d9b45b7f896104adbd1f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c43c6232fff1d9b45b7f896104adbd1f, type: 3}
@@ -20987,7 +22328,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1843611062
 Transform:
@@ -21024,7 +22365,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843611061}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -21370,45 +22711,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: c43c6232fff1d9b45b7f896104adbd1f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c43c6232fff1d9b45b7f896104adbd1f,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Bush_4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c43c6232fff1d9b45b7f896104adbd1f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c43c6232fff1d9b45b7f896104adbd1f, type: 3}
---- !u!1 &1876461289
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1876461290}
-  m_Layer: 0
-  m_Name: Directional Lighting
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1876461290
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1876461289}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.689171, y: 8.2282505, z: -4.537387}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1323509637}
-  - {fileID: 349204480}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1876718088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21486,10 +22805,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: d0d3b0eaf2e80304fbb272b045363811,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d0d3b0eaf2e80304fbb272b045363811,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Rock_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0d3b0eaf2e80304fbb272b045363811,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0d3b0eaf2e80304fbb272b045363811, type: 3}
@@ -21570,10 +22899,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9b55095a79a5e9f4db26c67de80a635d,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 9b55095a79a5e9f4db26c67de80a635d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b55095a79a5e9f4db26c67de80a635d, type: 3}
@@ -21740,10 +23089,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
         type: 3}
       propertyPath: m_Name
       value: Stone_Pillar_Base
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b8aefc43dae4d46ba2901af97fff11, type: 3}
@@ -21904,10 +23263,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 6a440f8bcab5a804aa916d09caf26007,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a440f8bcab5a804aa916d09caf26007,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Branch_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6a440f8bcab5a804aa916d09caf26007,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a440f8bcab5a804aa916d09caf26007, type: 3}
@@ -22323,10 +23692,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
         type: 3}
       propertyPath: m_Name
       value: Stone_Pillar_Base (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b8aefc43dae4d46ba2901af97fff11, type: 3}
@@ -22406,7 +23785,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67008
+  m_Name: pb_Mesh35350
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22461,9 +23840,9 @@ Mesh:
       format: 0
       dimension: 2
     - stream: 0
-      offset: 0
+      offset: 48
       format: 0
-      dimension: 0
+      dimension: 2
     - stream: 0
       offset: 0
       format: 0
@@ -22496,8 +23875,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 3264
-    _typelessdata: 0000000000000000000000000000803fa008cab1bed1cfb3bed1cf33dc5e27b10000803f000080bf000000000000000086e8df323b7e283f747e20340000803f6ce584b3bed14fb4bed14f349130dcb20000803f000080bffb9009343b7e283f1af615be00000000f304b53ef304353f8fee5bb4f304353ff30435bf9432b633f204353f000080bf15efc33eba16dd2614f615be3b7e283ff704b53e7b1e353fe9d8b5b966eb343f66eb34bf986916397d1e353f000080bf17efc33e3b7e283f1af615be00000000f304b53ef304353f8fee5bb4f304353ff40435bf9132b6b3f404353f000080bfd48b8a3e9de47e3314f615be3b7e283ff704b53e7b1e353fe9d8b5b966eb343f68eb34bf107816b97a1e353f000080bfd38b8a3e3c7e283f000000bf000000000000003f13c3f63c0a527c3942e27f3f43e27fbfef2dc0b805c3f63c000080bf743d273f9de47e33ea3afebed0d4843ffeffff3ea9bb003dfe78ceb99edf7f3fa0df7fbfb2f51c39babb003d000080bf286c263fd1d4843f000000bf000000000000003f13c3f63c0a527c3942e27f3f43e27fbfe011c0381ec3f63c000080bfda139e3ea1df35baea3afebed0d4843ffeffff3ea9bb003dfe78ceb99edf7f3fa0df7fbfb73b1bb99abb003d000080bfbd679c3e19be843f9c345ebfa82752bd4cbfbe3ee0a02fbf6ee89c3917413a3f18413abfbec40bb9e1a02fbf000080bfedbb323f2fff54bd98345ebfaa5b1b3f50bfbe3ecc7c2fbf615f2e3418633a3f17633abf2d596c36cc7c2fbf000080bfe9bb323f2b2e1b3f9c345ebfa82752bd4cbfbe3ee0a02fbf6ee89c3917413a3f17413abf6cad0d39e1a02fbf000080bf825663bceb2752bd98345ebfaa5b1b3f50bfbe3ecc7c2fbf615f2e3418633a3f18633abfc4a0b633cc7c2fbf000080bf5a5763bca65b1b3f376d82bff03a8134418fc63ba9f27fbfb7110735b548a5bcc748a53c4f0b5fb4a9f27fbf000080bf41d6c33edcee33b2346d82bf3b7e283f4d90c63ba9f27fbf9c8400359a48a5bca348a53cb0fe5fb4a9f27fbf000080bf38d6c33e377e283f376d82bff03a8134418fc63ba9f27fbfb7110735b548a5bca448a53cc2696b34a9f27fbf000080bfe5d2dcbe2ab69ab4346d82bf3b7e283f4d90c63ba9f27fbf9c8400359a48a5bc9248a53cb1fe5f34a9f27fbf000080bfe4d2dcbe327e283f7a825abf00000000f204b5beba8231bf3b99f434177638bf1776383fafb63fb4ba8231bf000080bf024711bd8df80db578825abf3b7e283fea04b5bebc8231bfc50dd234157638bf1576383f48a324b4bd8231bf000080bf2e4711bd327e283f7a825abf00000000f204b5beba8231bf3b99f434177638bf1776383fabb63f34ba8231bf000080bf753d27bfcfaf8db478825abf3b7e283fea04b5bebc8231bfc50dd234157638bf1576383f49a32434bc8231bf000080bf743d27bf377e283f000000bf00000000000000bfbed14fb3a1f5bf34000080bf0000803f43061fb4d48b0ab3000080bfd38b8abecfaf8db4fbffffbe3b7e283ff8ffffbed48b8ab2b494d134000080bf0000803f5b9f2db4d48b0ab3000080bfd18b8abe377e283f000000bf00000000000000bfbed14fb3a1f5bf34000080bf0000803f41061f34d48b8ab3000080bf743d27bf4a2190b3fbffffbe3b7e283ff8ffffbed48b8ab2b494d134000080bf0000803f5a9f2d3400000000000080bf703d27bf3a7e283f1ef615be00000000f504b5bef304353ff0998b34f40435bff304353f8e4ce7b3f304353f000080bfd68b8abe492190b320f615be3b7e283fed04b5bef204353fa0ff8634f40435bff404353f3aacdfb3f204353f000080bfd48b8abe3a7e283f1ef615be00000000f504b5bef304353ff0998b34f40435bff404353f8e4ce733f204353f000080bf17efc3be2a5f9e2620f615be3b7e283fed04b5bef204353fa0ff8634f40435bff404353f3dacdf33f204353f000080bf10efc3be3b7e283f1af615be00000000f304b53e00000000000080bf00000000000080bf0000000000000000000080bf1af6153ef304b53e000000bf000000000000000000000000000080bf00000000000080bf0000000000000000000080bf0000003f0000000000000000000000000000000000000000000080bf00000000000080bf0000000000000000000080bf0000000000000000000000bf000000000000003f00000000000080bf00000000000080bf0000000000000000000080bf0000003f0000003f9c345ebfa82752bd4cbfbe3e7e670d3e258c7dbf00000000258c7dbf7e670dbe00000000000080bff6e35d3f4cbfbe3e000000bf00000000000000007e670d3e258c7dbf00000000258c7dbf7e670dbe00000000000080bf258cfd3e00000000000000bf000000000000003f7e670d3e258c7dbf00000000258c7dbf7e670dbe00000000000080bf258cfd3e0000003f376d82bff03a8134418fc63b2340d3baf38c7dbfe54d0dbeeaff7fbf824ad53ad73c1bb0000080bf2c6d823f1628cc3b000000bf00000000000000002340d3baf38c7dbfe54d0dbeeaff7fbf824ad53ad73c1bb0000080bfeaffff3edf75eb389c345ebfa82752bd4cbfbe3e2340d3baf38c7dbfe54d0dbeeaff7fbf824ad53ad73c1bb0000080bf102f5e3fafa5c03e7a825abf00000000f204b5be0425f6b4000080bf0725f634000080bf0425f63400000000000080bf7a825a3ff204b5be376d82bff03a8134418fc63b0425f6b4000080bf0725f634000080bf0425f63400000000000080bf376d823f418fc63b000000bf00000000000000bf00000000000080bf00000000000080bf0000000000000000000080bf0000003f000000bf1ef615be00000000f504b5be00000000000080bf00000000000080bf0000000000000000000080bf1ef6153ef504b5be86e8df323b7e283f747e203401c6163f163d453f3fcf793e2e624b3f83781bbf904458b2000080bf7ca7ccbe03a002beeb3afebed0d4843f5bdf0b3301c6163f163d453f3fcf793e2e624b3f83781bbf904458b2000080bfef2983bf0ba002be14f615be3b7e283ff704b53e01c6163f163d453f3fcf793e2e624b3f83781bbf904458b2000080bfa81c04bf59b1723e14f615be3b7e283ff704b53e6b2d3c3ffa902d3f6d2d3cb301008033fa902d270000803f000080bff704b53ea645153feb3afebed0d4843f5bdf0b336b2d3c3ffa902d3f6d2d3cb301008033fa902d270000803f000080bf481e4c314cbb8c3fea3afebed0d4843ffeffff3e6b2d3c3ffa902d3f6d2d3cb301008033fa902d270000803f000080bffdffff3e4cbb8c3fea3afebed0d4843ffeffff3e8fe541bf1f27273f92e54133020080b300000000000080bf000080bffdffffbeeb6eec3eeb3afebed0d4843f5bdf0b338fe541bf1f27273f92e54133020080b300000000000080bf000080bf381e4cb1eb6eec3e98345ebfaa5b1b3f50bfbe3e8fe541bf1f27273f92e54133020080b300000000000080bf000080bf4ebfbebed256dbbd98345ebfaa5b1b3f50bfbe3ef02c0dbfc4ab433f3b18ab3e069b4f3f4ac9153f91087932000080bf2899b2be28f98a3ceb3afebed0d4843f5bdf0b33f02c0dbfc4ab433f3b18ab3e069b4f3f4ac9153f91087932000080bf456b513e1eb2c1be346d82bf3b7e283f4d90c63bf02c0dbfc4ab433f3b18ab3e069b4f3f4ac9153f91087932000080bf39e9e1be6c67bebe346d82bf3b7e283f4d90c63b15bc11bf9382473fca0f86bee8b84e3fc300173fa17edf32000080bf6982debe6bd29a3eeb3afebed0d4843f5bdf0b3315bc11bf9382473fca0f86bee8b84e3fc300173fa17edf32000080bf4739583e749b973e78825abf3b7e283fea04b5be15bc11bf9382473fca0f86bee8b84e3fc300173fa17edf32000080bfb81f9abeb5d28fbd78825abf3b7e283fea04b5befb5a78be5505463f4fe515bf2246743fc92e993e76b598b2000080bf18171ebf292f6c3eeb3afebed0d4843f5bdf0b33fb5a78be5505463f4fe515bf2246743fc92e993e76b598b2000080bfbe3d27be56b22a3ffbffffbe3b7e283ff8ffffbefb5a78be5505463f4fe515bf2246743fc92e993e76b598b2000080bfe0738fbe02c84c3dfbffffbe3b7e283ff8ffffbebb34793e7390453fb96816bfea25743fb5fb99bee0bc4632000080bf80bf2cbf8342febdeb3afebed0d4843f5bdf0b33bb34793e7390453fb96816bfea25743fb5fb99bee0bc4632000080bfb22049bf1fccfc3e20f615be3b7e283fed04b5bebb34793e7390453fb96816bfea25743fb5fb99bee0bc4632000080bf82dbacbe6dc3683d20f615be3b7e283fed04b5be01c6163f143d453f54cf79be2e624b3f83781bbf22045a32000080bfab1c04bf3fb172beeb3afebed0d4843f5bdf0b3301c6163f143d453f54cf79be2e624b3f83781bbf22045a32000080bff02983bf18a0023e86e8df323b7e283f747e203401c6163f143d453f54cf79be2e624b3f83781bbf22045a32000080bf7ea7ccbe21a0023e
+    m_DataSize: 3808
+    _typelessdata: 0000000000000000000000000000803fa008cab1bed1cfb3bed1cf33dc5e27b10000803f000080bf000000000000000013cdc63c43c52c3e86e8df323b7e283f747e20340000803f6ce584b3bed14fb4bed14f349130dcb20000803f000080bffb9009343b7e283fcc52823ea5361f3e1af615be00000000f304b53ef304353f8fee5bb4f304353ff30435bf9432b633f204353f000080bf15efc33eba16dd269bbb263d7c7aa43e14f615be3b7e283ff704b53e7b1e353fe9d8b5b966eb343f66eb34bf986916397d1e353f000080bf17efc33e3b7e283ff9e8943e6bce913e1af615be00000000f304b53ef304353f8fee5bb4f304353ff40435bf9132b6b3f404353f000080bfd48b8a3e9de47e330684cc3e9aa11f3f14f615be3b7e283ff704b53e7b1e353fe9d8b5b966eb343f68eb34bf107816b97a1e353f000080bfd38b8a3e3c7e283fbe9a223ebfa21f3f000000bf000000000000003f13c3f63c0a527c3942e27f3f43e27fbfef2dc0b805c3f63c000080bf743d273f9de47e33b482cc3e589ff73eea3afebed0d4843ffeffff3ea9bb003dfe78ceb99edf7f3fa0df7fbfb2f51c39babb003d000080bf286c263fd1d4843f0bd7a33cf03bf83e000000bf000000000000003f13c3f63c0a527c3942e27f3f43e27fbfe011c0381ec3f63c000080bfda139e3ea1df35bab482cc3e589ff73eea3afebed0d4843ffeffff3ea9bb003dfe78ceb99edf7f3fa0df7fbfb73b1bb99abb003d000080bfbd679c3e19be843f0bd7a33cf03bf83e9c345ebfa82752bd4cbfbe3ee0a02fbf6ee89c3917413a3f18413abfbec40bb9e1a02fbf000080bfedbb323f2fff54bd8d1dd63eedb7ae3e98345ebfaa5b1b3f50bfbe3ecc7c2fbf615f2e3418633a3f17633abf2d596c36cc7c2fbf000080bfe9bb323f2b2e1b3fe7cd353eedb7ae3e9c345ebfa82752bd4cbfbe3ee0a02fbf6ee89c3917413a3f17413abf6cad0d39e1a02fbf000080bf825663bceb2752bdadf7753f40e7663e98345ebfaa5b1b3f50bfbe3ecc7c2fbf615f2e3418633a3f18633abfc4a0b633cc7c2fbf000080bf5a5763bca65b1b3ff9563a3f7cf2283e376d82bff03a8134418fc63ba9f27fbfb7110735b548a5bcc748a53c4f0b5fb4a9f27fbf000080bf41d6c33edcee33b2aba57a3f54dfa43d346d82bf3b7e283f4d90c63ba9f27fbf9c8400359a48a5bca348a53cb0fe5fb4a9f27fbf000080bf38d6c33e377e283ff1043f3f0bd7a33c376d82bff03a8134418fc63ba9f27fbfb7110735b548a5bca448a53cc2696b34a9f27fbf000080bfe5d2dcbe2ab69ab4570c393f6576143f346d82bf3b7e283f4d90c63ba9f27fbf9c8400359a48a5bc9248a53cb1fe5f34a9f27fbf000080bfe4d2dcbe327e283f580c393fb811523f7a825abf00000000f204b5beba8231bf3b99f434177638bf1776383fafb63fb4ba8231bf000080bf024711bd8df80db56dff133f6376143f78825abf3b7e283fea04b5bebc8231bfc50dd234157638bf1576383f48a324b4bd8231bf000080bf2e4711bd327e283f70ff133fb811523f7a825abf00000000f204b5beba8231bf3b99f434177638bf1776383fabb63f34ba8231bf000080bf753d27bfcfaf8db46dff133f6376143f78825abf3b7e283fea04b5bebc8231bfc50dd234157638bf1576383f49a32434bc8231bf000080bf743d27bf377e283f70ff133fb811523f000000bf00000000000000bfbed14fb3a1f5bf34000080bf0000803f43061fb4d48b0ab3000080bfd38b8abecfaf8db4fe5ae03e6376143ffbffffbe3b7e283ff8ffffbed48b8ab2b494d134000080bf0000803f5b9f2db4d48b0ab3000080bfd18b8abe377e283f035be03eb811523f000000bf00000000000000bfbed14fb3a1f5bf34000080bf0000803f41061f34d48b8ab3000080bf743d27bf4a2190b3015be03e7030573ffbffffbe3b7e283ff8ffffbed48b8ab2b494d134000080bf0000803f5a9f2d3400000000000080bf703d27bf3a7e283fd4c82d3f7130573f1ef615be00000000f504b5bef304353ff0998b34f40435bff304353f8e4ce7b3f304353f000080bfd68b8abe492190b3fe5ae03e5e027b3f20f615be3b7e283fed04b5bef204353fa0ff8634f40435bff404353f3aacdfb3f204353f000080bfd48b8abe3a7e283fd3c82d3f5e027b3f1ef615be00000000f504b5bef304353ff0998b34f40435bff404353f8e4ce733f204353f000080bf17efc3be2a5f9e260bd7a33c58f8df3c20f615be3b7e283fed04b5bef204353fa0ff8634f40435bff404353f3dacdf33f204353f000080bf10efc3be3b7e283f05bd863e0bd7a33c1af615be00000000f304b53e00000000000080bf00000000000080bf0000000000000000000080bf1af6153ef304b53e4932893e78387b3f000000bf000000000000000000000000000080bf00000000000080bf0000000000000000000080bf0000003f000000007dfb493e0908503f00000000000000000000000000000000000080bf00000000000080bf0000000000000000000080bf0000000000000000d4a0bb3e84d2613f000000bf000000000000003f00000000000080bf00000000000080bf0000000000000000000080bf0000003f0000003f2e3c033e7c647b3f9c345ebfa82752bd4cbfbe3e7e670d3e258c7dbf00000000258c7dbf7e670dbe00000000000080bff6e35d3f4cbfbe3e0bd7a33c3340633f000000bf00000000000000007e670d3e258c7dbf00000000258c7dbf7e670dbe00000000000080bf258cfd3e000000007dfb493e0908503f000000bf000000000000003f7e670d3e258c7dbf00000000258c7dbf7e670dbe00000000000080bf258cfd3e0000003f2e3c033e7c647b3f376d82bff03a8134418fc63b2340d3baf38c7dbfe54d0dbeeaff7fbf824ad53ad73c1bb0000080bf2c6d823f1628cc3b8e06ad3cbadf3d3f000000bf00000000000000002340d3baf38c7dbfe54d0dbeeaff7fbf824ad53ad73c1bb0000080bfeaffff3edf75eb387dfb493e0908503f9c345ebfa82752bd4cbfbe3e2340d3baf38c7dbfe54d0dbeeaff7fbf824ad53ad73c1bb0000080bf102f5e3fafa5c03e0bd7a33c3340633f7a825abf00000000f204b5be0425f6b4000080bf0725f634000080bf0425f63400000000000080bf7a825a3ff204b5be1467023e77c1243f376d82bff03a8134418fc63b0425f6b4000080bf0725f634000080bf0425f63400000000000080bf376d823f418fc63b8e06ad3cbadf3d3f000000bf00000000000000bf00000000000080bf00000000000080bf0000000000000000000080bf0000003f000000bff3c7883e77c1243f1ef615be00000000f504b5be00000000000080bf00000000000080bf0000000000000000000080bf1ef6153ef504b5bed074bb3e56083e3f86e8df323b7e283f747e203401c6163f163d453f3fcf793e2e624b3f83781bbf904458b2000080bf7ca7ccbe03a002becc52823ea5361f3eeb3afebed0d4843f5bdf0b3301c6163f163d453f3fcf793e2e624b3f83781bbf904458b2000080bfef2983bf0ba002bef625f23e249b073e14f615be3b7e283ff704b53e01c6163f163d453f3fcf793e2e624b3f83781bbf904458b2000080bfa81c04bf59b1723ef9e8943e6bce913e14f615be3b7e283ff704b53e6b2d3c3ffa902d3f6d2d3cb301008033fa902d270000803f000080bff704b53ea645153ff9e8943e6bce913eeb3afebed0d4843f5bdf0b336b2d3c3ffa902d3f6d2d3cb301008033fa902d270000803f000080bf481e4c314cbb8c3ff625f23e249b073eea3afebed0d4843ffeffff3e6b2d3c3ffa902d3f6d2d3cb301008033fa902d270000803f000080bffdffff3e4cbb8c3f6a7cfb3e7c7aa43eea3afebed0d4843ffeffff3e8fe541bf1f27273f92e54133020080b300000000000080bf000080bffdffffbeeb6eec3efa03063f40e7663eeb3afebed0d4843f5bdf0b338fe541bf1f27273f92e54133020080b300000000000080bf000080bf381e4cb1eb6eec3eeddc023f067f303d98345ebfaa5b1b3f50bfbe3e8fe541bf1f27273f92e54133020080b300000000000080bf000080bf4ebfbebed256dbbdf9563a3f7cf2283e98345ebfaa5b1b3f50bfbe3ef02c0dbfc4ab433f3b18ab3e069b4f3f4ac9153f91087932000080bf2899b2be28f98a3cf9563a3f7cf2283eeb3afebed0d4843f5bdf0b33f02c0dbfc4ab433f3b18ab3e069b4f3f4ac9153f91087932000080bf456b513e1eb2c1beeddc023f067f303d346d82bf3b7e283f4d90c63bf02c0dbfc4ab433f3b18ab3e069b4f3f4ac9153f91087932000080bf39e9e1be6c67bebef1043f3f0bd7a33c346d82bf3b7e283f4d90c63b15bc11bf9382473fca0f86bee8b84e3fc300173fa17edf32000080bf6982debe6bd29a3edbdc3d3fab570f3feb3afebed0d4843f5bdf0b3315bc11bf9382473fca0f86bee8b84e3fc300173fa17edf32000080bf4739583e749b973ead6a013fab570f3f78825abf3b7e283fea04b5be15bc11bf9382473fca0f86bee8b84e3fc300173fa17edf32000080bfb81f9abeb5d28fbdad05313f322dd93e78825abf3b7e283fea04b5befb5a78be5505463f4fe515bf2246743fc92e993e76b598b2000080bf18171ebf292f6c3ead05313f322dd93eeb3afebed0d4843f5bdf0b33fb5a78be5505463f4fe515bf2246743fc92e993e76b598b2000080bfbe3d27be56b22a3fad6a013fab570f3ffbffffbe3b7e283ff8ffffbefb5a78be5505463f4fe515bf2246743fc92e993e76b598b2000080bfe0738fbe02c84c3d37ff133ff231af3efbffffbe3b7e283ff8ffffbebb34793e7390453fb96816bfea25743fb5fb99bee0bc4632000080bf80bf2cbf8342febd37ff133ff231af3eeb3afebed0d4843f5bdf0b33bb34793e7390453fb96816bfea25743fb5fb99bee0bc4632000080bfb22049bf1fccfc3ead6a013fab570f3f20f615be3b7e283fed04b5bebb34793e7390453fb96816bfea25743fb5fb99bee0bc4632000080bf82dbacbe6dc3683dfe5ae03eedb7ae3e20f615be3b7e283fed04b5be01c6163f143d453f54cf79be2e624b3f83781bbf22045a32000080bfab1c04bf3fb172be05bd863e0bd7a33ceb3afebed0d4843f5bdf0b3301c6163f143d453f54cf79be2e624b3f83781bbf22045a32000080bff02983bf18a0023ef625f23e249b073e86e8df323b7e283f747e203401c6163f143d453f54cf79be2e624b3f83781bbf22045a32000080bf7ea7ccbe21a0023ecc52823ea5361f3e
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -22785,10 +24164,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: c43c6232fff1d9b45b7f896104adbd1f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c43c6232fff1d9b45b7f896104adbd1f,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Bush_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c43c6232fff1d9b45b7f896104adbd1f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c43c6232fff1d9b45b7f896104adbd1f, type: 3}
@@ -23054,10 +24443,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 825b1265d15de544ca33d720b3457170,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 825b1265d15de544ca33d720b3457170,
         type: 3}
       propertyPath: m_Name
       value: Shared_Prop_Boulder_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 825b1265d15de544ca33d720b3457170,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 825b1265d15de544ca33d720b3457170, type: 3}
@@ -23227,7 +24626,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2033128537
 Transform:
@@ -23460,10 +24859,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: fbed76a5043c5e44badfd596b27ff149,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fbed76a5043c5e44badfd596b27ff149,
         type: 3}
       propertyPath: m_Name
       value: Prop_Well_Dirt
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fbed76a5043c5e44badfd596b27ff149,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6834383366240858724, guid: fbed76a5043c5e44badfd596b27ff149,
         type: 3}
@@ -23556,10 +24965,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
         type: 3}
       propertyPath: m_Name
       value: Stone_Pillar_Base (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 87b8aefc43dae4d46ba2901af97fff11,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b8aefc43dae4d46ba2901af97fff11, type: 3}
@@ -23586,7 +25005,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2052188445
 Transform:
@@ -23829,10 +25248,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dd6da6c4270ab084795b6a9f341fd9b8,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Tree_Pine_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6da6c4270ab084795b6a9f341fd9b8, type: 3}
@@ -23987,10 +25436,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: a15b6b08ae809944eb856fd35dd681d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a15b6b08ae809944eb856fd35dd681d7,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Mushroom_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a15b6b08ae809944eb856fd35dd681d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: a15b6b08ae809944eb856fd35dd681d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a15b6b08ae809944eb856fd35dd681d7, type: 3}
@@ -24071,10 +25535,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 0bc40a385250af84d81c9db7a4db3167,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0bc40a385250af84d81c9db7a4db3167,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Tree_Pine_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bc40a385250af84d81c9db7a4db3167,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 0bc40a385250af84d81c9db7a4db3167,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 0bc40a385250af84d81c9db7a4db3167,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 0bc40a385250af84d81c9db7a4db3167,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bc40a385250af84d81c9db7a4db3167, type: 3}
@@ -24143,7 +25632,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2074710402
 Transform:
@@ -24180,7 +25669,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074710401}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -24296,10 +25785,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 13e280b4d1a751f4b873a6bad61c46e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 13e280b4d1a751f4b873a6bad61c46e2,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13e280b4d1a751f4b873a6bad61c46e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 13e280b4d1a751f4b873a6bad61c46e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 13e280b4d1a751f4b873a6bad61c46e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 13e280b4d1a751f4b873a6bad61c46e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e280b4d1a751f4b873a6bad61c46e2, type: 3}
@@ -24399,6 +25913,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: d88bd177a20f8cf499711e2eb5f708eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4723740034965742994, guid: d88bd177a20f8cf499711e2eb5f708eb,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -24444,6 +25963,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hilly_Prop_Camp_Sitting_Log
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d88bd177a20f8cf499711e2eb5f708eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d88bd177a20f8cf499711e2eb5f708eb, type: 3}
 --- !u!1 &2093175965
@@ -24460,7 +25984,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2093175966
 Transform:
@@ -24545,10 +26069,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dd6da6c4270ab084795b6a9f341fd9b8,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Tree_Pine_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: dd6da6c4270ab084795b6a9f341fd9b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6da6c4270ab084795b6a9f341fd9b8, type: 3}
@@ -24566,7 +26120,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2118872213
 Transform:
@@ -24679,10 +26233,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -6706838754529431036, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24429ba69f6882342bb8cbc6c32719fe, type: 3}
@@ -24748,10 +26337,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8603339840771121511, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -6706838754529431036, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 524963029816909353, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
         type: 3}
       propertyPath: m_Name
       value: Hilly_Prop_Grass_Clump_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168271938362447112, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2168976252407219861, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2526933834787328523, guid: 24429ba69f6882342bb8cbc6c32719fe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24429ba69f6882342bb8cbc6c32719fe, type: 3}
@@ -24890,6 +26514,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dorru
       objectReference: {fileID: 0}
+    - target: {fileID: 136055473348825041, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768410613994663966, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022741587037219444, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371845429010877433, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823324225451008491, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4621696215156102442, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6860570736259895392, guid: 69d409e193acb664a90ad21c8cd12beb,
         type: 3}
       propertyPath: m_RootOrder
@@ -24959,6 +26613,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7499737004023659987, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7724160386306729779, guid: 69d409e193acb664a90ad21c8cd12beb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69d409e193acb664a90ad21c8cd12beb, type: 3}

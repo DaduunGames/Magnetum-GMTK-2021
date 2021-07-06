@@ -1,33 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-2268050585514981895
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
-  m_Name: Grain
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  colored:
-    overrideState: 0
-    value: 1
-  intensity:
-    overrideState: 0
-    value: 0
-  size:
-    overrideState: 0
-    value: 1
-  lumContrib:
-    overrideState: 0
-    value: 0.8
 --- !u!114 &-2058410552879598209
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -104,13 +76,13 @@ MonoBehaviour:
     overrideState: 1
     value: 0
   mixerRedOutRedIn:
-    overrideState: 0
+    overrideState: 1
     value: 100
   mixerRedOutGreenIn:
-    overrideState: 0
+    overrideState: 1
     value: 0
   mixerRedOutBlueIn:
-    overrideState: 0
+    overrideState: 1
     value: 0
   mixerGreenOutRedIn:
     overrideState: 0
@@ -131,14 +103,14 @@ MonoBehaviour:
     overrideState: 0
     value: 100
   lift:
-    overrideState: 0
-    value: {x: 1, y: 0.97433406, z: 0.9935829, w: 0}
+    overrideState: 1
+    value: {x: 0.9770725, y: 1, z: 0.74766093, w: 0}
   gamma:
     overrideState: 0
-    value: {x: 1, y: 0.96728146, z: 0.9979874, w: 0}
+    value: {x: 0.99389464, y: 1, z: 0.92759144, w: -0.015037593}
   gain:
-    overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    overrideState: 1
+    value: {x: 1, y: 0.6732316, z: 0.82055295, w: 0}
   masterCurve:
     overrideState: 0
     value:
@@ -1420,8 +1392,6 @@ MonoBehaviour:
   - {fileID: 6535748896529774703}
   - {fileID: -1340083502416416424}
   - {fileID: -2058410552879598209}
-  - {fileID: 6205348606250234212}
-  - {fileID: -2268050585514981895}
 --- !u!114 &4536678505724793068
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1443,7 +1413,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.76
+    value: 2.86
   color:
     overrideState: 1
     value: {r: 0.8018868, g: 0.46604812, b: 0.02647741, a: 1}
@@ -1461,7 +1431,7 @@ MonoBehaviour:
     value: -12
   thicknessModifier:
     overrideState: 1
-    value: 4.27
+    value: 6
   directLightingStrength:
     overrideState: 0
     value: 0
@@ -1471,34 +1441,6 @@ MonoBehaviour:
   quality:
     overrideState: 0
     value: 2
---- !u!114 &6205348606250234212
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 556797029e73b2347956b6579e77e05b, type: 3}
-  m_Name: DepthOfField
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  focusDistance:
-    overrideState: 0
-    value: 10
-  aperture:
-    overrideState: 0
-    value: 5.6
-  focalLength:
-    overrideState: 0
-    value: 50
-  kernelSize:
-    overrideState: 0
-    value: 1
 --- !u!114 &6535748896529774703
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1514,22 +1456,22 @@ MonoBehaviour:
   active: 0
   enabled:
     overrideState: 1
-    value: 0
+    value: 1
   intensity:
     overrideState: 1
-    value: 195
+    value: 8.88
   threshold:
     overrideState: 1
-    value: 1
+    value: 0.94
   softKnee:
     overrideState: 1
-    value: 0.416
+    value: 0.52
   clamp:
     overrideState: 1
     value: 65468.73
   diffusion:
     overrideState: 1
-    value: 7
+    value: 3.4
   anamorphicRatio:
     overrideState: 1
     value: 0
