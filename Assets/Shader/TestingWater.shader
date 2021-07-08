@@ -160,8 +160,10 @@
 						// sample main texture
 						float4 albedo = tex2D(_MainTex, input.texCoord.xy);
 
-						float4 col = _Color * foamRamp * albedo;
+						float4 col = _Color * foamRamp + _EdgeColor * albedo;
+						//float4 col = _Color + foamLine * _EdgeColor;
 						return col;
+
 					}
 
 					ENDCG

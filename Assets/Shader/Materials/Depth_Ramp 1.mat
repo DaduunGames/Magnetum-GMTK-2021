@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_ShallowWater
+  m_Name: Depth_Ramp 1
   m_Shader: {fileID: 4800000, guid: 66fa1945aa9f5fc48b91cbf822aa11d3, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -20,11 +20,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _DepthRampTex:
-        m_Texture: {fileID: 2800000, guid: eb98e604b2cc2994b82d9c380fa0e21a, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 0b1f0f53b8facd744a5c4540593c2536, type: 3}
+        m_Texture: {fileID: 2800000, guid: fde9d21e027b78b4baed9ec934a66b9b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NoiseTex:
@@ -32,11 +32,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _DepthFactor: 0.96
-    - _DistortStrength: 0.36
-    - _ExtraHeight: -0.14
-    - _WaveAmp: 0
-    - _WaveSpeed: 2
+    - _DepthFactor: 1
+    - _DistortStrength: 1
+    - _ExtraHeight: 0
+    - _WaveAmp: 0.2
+    - _WaveSpeed: 1
     m_Colors:
-    - _Color: {r: 0.06941969, g: 0.9811316, b: 0.9811321, a: 0.8862745}
-    - _EdgeColor: {r: 0.1509434, g: 0.040583838, b: 0.040583838, a: 0.09803922}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EdgeColor: {r: 1, g: 1, b: 1, a: 1}
