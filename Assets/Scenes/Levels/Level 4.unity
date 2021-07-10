@@ -4677,7 +4677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttractedObjects:
   - {fileID: 1217514211}
-  AttractionForce: 150
+  AttractionForce: 100
   DampeningFactor: 10000
 --- !u!135 &306431886
 SphereCollider:
@@ -24004,7 +24004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttractedObjects:
   - {fileID: 306431883}
-  AttractionForce: 150
+  AttractionForce: 100
   DampeningFactor: 10000
 --- !u!135 &1217514214
 SphereCollider:
@@ -28557,7 +28557,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 1500599195093775323, guid: 6cd200737bbd0004fa7cbde26afb8da2, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45656,7 +45656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttractedObjects: []
-  AttractionForce: 150
+  AttractionForce: 100
   DampeningFactor: 10000
 --- !u!4 &2082603711
 Transform:

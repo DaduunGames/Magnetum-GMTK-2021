@@ -13873,7 +13873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttractedObjects: []
-  AttractionForce: 150
+  AttractionForce: 100
   DampeningFactor: 10000
 --- !u!4 &1071189431 stripped
 Transform:
@@ -15832,7 +15832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttractedObjects:
   - {fileID: 1378650442}
-  AttractionForce: 150
+  AttractionForce: 100
   DampeningFactor: 10000
 --- !u!135 &1284882734
 SphereCollider:
@@ -17048,7 +17048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttractedObjects:
   - {fileID: 1284882731}
-  AttractionForce: 150
+  AttractionForce: 100
   DampeningFactor: 10000
 --- !u!135 &1378650445
 SphereCollider:

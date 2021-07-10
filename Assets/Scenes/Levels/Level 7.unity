@@ -3821,7 +3821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttractedObjects:
   - {fileID: 1726020800}
-  AttractionForce: 150
+  AttractionForce: 100
   DampeningFactor: 10000
 --- !u!135 &529266679
 SphereCollider:
@@ -7324,7 +7324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttractedObjects: []
-  AttractionForce: 150
+  AttractionForce: 100
   DampeningFactor: 10000
 --- !u!4 &804083616
 Transform:
@@ -10351,13 +10351,6 @@ MonoBehaviour:
   distanceMin: 20
   distanceMax: 40
   smoothTime: 5
-  PosXAnchor: {fileID: 0}
-  NegXAnchor: {fileID: 0}
-  PosZAnchor: {fileID: 0}
-  NegZAnchor: {fileID: 0}
-  PosYAnchor: {fileID: 0}
-  NegYAnchor: {fileID: 0}
-  CurrentAnchor: {fileID: 0}
 --- !u!81 &1281814382
 AudioListener:
   m_ObjectHideFlags: 0
@@ -12901,7 +12894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttractedObjects:
   - {fileID: 529266676}
-  AttractionForce: 150
+  AttractionForce: 100
   DampeningFactor: 10000
 --- !u!135 &1726020803
 SphereCollider:

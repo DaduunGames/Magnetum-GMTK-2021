@@ -8,7 +8,7 @@ public class Magnet : MonoBehaviour
     public float AttractionForce;
     public float DampeningFactor = 1;
 
-    private void Update()
+    private void FixedUpdate()
     {
         foreach (GameObject obj in AttractedObjects)
         {

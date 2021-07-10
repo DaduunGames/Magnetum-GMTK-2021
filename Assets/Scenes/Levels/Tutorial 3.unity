@@ -36864,7 +36864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttractedObjects:
   - {fileID: 7272832476106566619}
-  AttractionForce: 150
+  AttractionForce: 80
   DampeningFactor: 10000
 --- !u!54 &786118854114805650
 Rigidbody:
@@ -38564,7 +38564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttractedObjects:
   - {fileID: 786118854114805647}
-  AttractionForce: 150
+  AttractionForce: 80
   DampeningFactor: 10000
 --- !u!1 &7434779177332345080
 GameObject:
