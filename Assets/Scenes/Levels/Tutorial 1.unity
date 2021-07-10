@@ -23988,7 +23988,7 @@ MonoBehaviour:
   Goal1: {fileID: 265011317}
   Goal2: {fileID: 1317736187}
   SMTransform: {fileID: 1083965380}
-  collisionDist: 0.66
+  collisionDist: 0.99
   CameraAnchor: {fileID: 2072735299}
 --- !u!135 &1983266255
 SphereCollider:
