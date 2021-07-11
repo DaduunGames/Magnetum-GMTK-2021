@@ -106,6 +106,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac4adfd60e65f74687b07abd3106316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlimeResistance: 40
-  Particles: {fileID: 3666689375933470494, guid: 859d5699cd007bd4e826064d32d45856,
+  WaterSplashParticles: {fileID: 3666689375933470494, guid: 859d5699cd007bd4e826064d32d45856,
     type: 3}
+  Ripptied: {fileID: 1776281516571601462, guid: 4f6ae7cb941bb924dacb4255328a60b4,
+    type: 3}
+  ObjectInWaterTransform: {x: 0, y: 0, z: 0}
+  SlimeResistance: 40
+  WaitTime: 0.5
+  inWater: {fileID: 0}
