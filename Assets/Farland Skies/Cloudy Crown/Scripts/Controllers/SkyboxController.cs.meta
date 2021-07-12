@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b6d9d8b65fd0031429711733d00cff98
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - SkyboxMaterial: {instanceID: 0}
+  - _starsCubemap: {instanceID: 0}
+  - _sunTexture: {instanceID: 0}
+  - _sunLight: {instanceID: 0}
+  - _moonTexture: {instanceID: 0}
+  - _moonLight: {instanceID: 0}
+  - _cloudsCubemap: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
