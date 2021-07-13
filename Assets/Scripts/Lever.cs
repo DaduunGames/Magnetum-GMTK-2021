@@ -10,17 +10,33 @@ public class Lever : MonoBehaviour
     public AudioSource openDoor;
     public AudioSource lever;
 
+    public bool OneTimeToggle = false;
+    private bool ToggledOnce = false;
+
     private void OnTriggerEnter(Collider col)
     {
         if(col.gameObject.layer == 8)
         {
-            anim.SetBool("On", !anim.GetBool("On"));
-            foreach(Interactable item in Interactables)
+            if (OneTimeToggle == false)
             {
-                item.Activate();
-                openDoor.Play();
-                lever.Play();
+                activate();
             }
+            else if (ToggledOnce == false)
+            {
+                ToggledOnce = true;
+                activate();
+            }
+        }
+    }
+
+    void activate()
+    {
+        anim.SetBool("On", !anim.GetBool("On"));
+        foreach (Interactable item in Interactables)
+        {
+            item.Activate();
+            openDoor.Play();
+            lever.Play();
         }
     }
 }
