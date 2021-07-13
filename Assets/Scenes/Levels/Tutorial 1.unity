@@ -1781,6 +1781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkyboxController
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012507270554, guid: 343c81389df5bea428fd193525123ad3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011538172164, guid: 343c81389df5bea428fd193525123ad3, type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.32799944
@@ -1904,6 +1908,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114000011739388864, guid: 343c81389df5bea428fd193525123ad3,
         type: 3}
+      propertyPath: _exposure
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011739388864, guid: 343c81389df5bea428fd193525123ad3,
+        type: 3}
       propertyPath: _sunTint.b
       value: 0.575451
       objectReference: {fileID: 0}
@@ -1956,6 +1965,16 @@ PrefabInstance:
         type: 3}
       propertyPath: _topColor.r
       value: 0.0072156843
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011739388864, guid: 343c81389df5bea428fd193525123ad3,
+        type: 3}
+      propertyPath: _moonEnabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011739388864, guid: 343c81389df5bea428fd193525123ad3,
+        type: 3}
+      propertyPath: _moonTexture
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114000011739388864, guid: 343c81389df5bea428fd193525123ad3,
         type: 3}
@@ -10958,7 +10977,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42960
+  m_Name: pb_Mesh43216
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13459,7 +13478,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43382
+  m_Name: pb_Mesh43640
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24034,7 +24053,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43024
+  m_Name: pb_Mesh43282
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
