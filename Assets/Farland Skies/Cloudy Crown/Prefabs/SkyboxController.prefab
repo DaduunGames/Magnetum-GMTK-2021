@@ -113,8 +113,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000011200675260}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -173,7 +174,7 @@ LensFlare:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000011200675260}
   m_Enabled: 1
-  m_Flare: {fileID: 12100000, guid: 54fbbf098d116effa00081aba8ad6659, type: 2}
+  m_Flare: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Brightness: 0.3
   m_FadeSpeed: 3
@@ -221,8 +222,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000012507270554}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0
   m_Range: 10
