@@ -135,7 +135,7 @@ public class CamerOrbit : MonoBehaviour
         {
             if (Input.GetMouseButton(1))
             {
-                velocityX += xSpeed * Input.GetAxis("Mouse X") * distance * 0.02f;
+                velocityX += xSpeed * Input.GetAxis("Mouse X") * 0.02f; //* distance;
                 velocityY += ySpeed * Input.GetAxis("Mouse Y") * 0.02f;
             }
             rotationYAxis += velocityX;
@@ -202,11 +202,11 @@ public class CamerOrbit : MonoBehaviour
     public void AdjustXSpeed()
     {
         Slider slider = SettingsCanvas.transform.GetChild(1).GetComponent<Slider>();
-        xSpeed = baseXSpeed * (slider.value / 10);
+        xSpeed = baseXSpeed + (slider.value * 5);
     }
     public void AdjustYSpeed()
     {
         Slider slider = SettingsCanvas.transform.GetChild(2).GetComponent<Slider>();
-        ySpeed = baseYSpeed * (slider.value / 5);
+        ySpeed = baseYSpeed + (slider.value * 5);
     }
 }
