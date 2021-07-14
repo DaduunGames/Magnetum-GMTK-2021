@@ -27,6 +27,7 @@ public class GUIcontroller : MonoBehaviour
     public AudioClip Pressed;
 
     public GameObject ContinueGameButton;
+    public GameObject Settings;
 
     private void Start()
     {
@@ -37,6 +38,7 @@ public class GUIcontroller : MonoBehaviour
         PauseScreen.SetActive(false);
         HowToAnim.gameObject.SetActive(false);
         GUI.gameObject.SetActive(true);
+        Settings.SetActive(false);
 
         if (ContinueGameButton)
         {
@@ -74,6 +76,7 @@ public class GUIcontroller : MonoBehaviour
         PauseScreen.SetActive(false);
         HowToAnim.gameObject.SetActive(false);
         GUI.gameObject.SetActive(false);
+        Settings.SetActive(false);
 
         GUI.SetBool("Triggered", true);
         WinScreen.GetComponent<Animator>().SetBool("Triggered", true);
@@ -86,6 +89,7 @@ public class GUIcontroller : MonoBehaviour
         PauseScreen.SetActive(false);
         HowToAnim.gameObject.SetActive(false);
         GUI.gameObject.SetActive(true);
+        Settings.SetActive(false);
 
         GUI.SetBool("Triggered", false);
         WinScreen.GetComponent<Animator>().SetBool("Triggered", false);
@@ -101,6 +105,7 @@ public class GUIcontroller : MonoBehaviour
         PauseScreen.SetActive(true);
         HowToAnim.gameObject.SetActive(false);
         GUI.gameObject.SetActive(false);
+        Settings.SetActive(false);
 
         isPaused = true;
         GUI.SetBool("Triggered", true);
@@ -114,6 +119,7 @@ public class GUIcontroller : MonoBehaviour
         PauseScreen.SetActive(false);
         HowToAnim.gameObject.SetActive(false);
         GUI.gameObject.SetActive(true);
+        Settings.SetActive(false);
 
         isPaused = false;
         GUI.SetBool("Triggered", false);
@@ -128,6 +134,7 @@ public class GUIcontroller : MonoBehaviour
         PauseScreen.SetActive(false);
         HowToAnim.gameObject.SetActive(true);
         GUI.gameObject.SetActive(false);
+        Settings.SetActive(false);
 
         isPaused = false;
         GUI.SetBool("Triggered", true);
@@ -141,6 +148,7 @@ public class GUIcontroller : MonoBehaviour
         PauseScreen.SetActive(false);
         HowToAnim.gameObject.SetActive(false);
         GUI.gameObject.SetActive(true);
+        Settings.SetActive(false);
 
         isPaused = false;
         GUI.SetBool("Triggered", false);
@@ -227,5 +235,14 @@ public class GUIcontroller : MonoBehaviour
     public void LoadUrl(string url)
     {
         Application.OpenURL(url);
+    }
+
+    public void ActivateSettings()
+    {
+        WinScreen.SetActive(false);
+        PauseScreen.SetActive(false);
+        HowToAnim.gameObject.SetActive(false);
+        GUI.gameObject.SetActive(false);
+        Settings.SetActive(true);
     }
 }

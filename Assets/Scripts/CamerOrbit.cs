@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CamerOrbit : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class CamerOrbit : MonoBehaviour
     public float distance = 2.0f;
     public float xSpeed = 20.0f;
     public float ySpeed = 20.0f;
+    public float baseXSpeed = 20.0f;
+    public float baseYSpeed = 20.0f;
     public float yMinLimit = -90f;
     public float yMaxLimit = 90f;
     public float distanceMin = 10f;
@@ -24,6 +27,7 @@ public class CamerOrbit : MonoBehaviour
     public GameObject PosYAnchor;
     public GameObject NegYAnchor;
     public GameObject CurrentAnchor;*/
+    public GameObject SettingsCanvas;
     float rotationYAxis = 0.0f;
     float rotationXAxis = 0.0f;
     float velocityX = 0.0f;
@@ -31,6 +35,10 @@ public class CamerOrbit : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        xSpeed = baseXSpeed;
+        ySpeed = baseYSpeed;
+        AdjustXSpeed();
+        AdjustYSpeed();
         Vector3 angles = transform.eulerAngles;
         rotationYAxis = angles.y;
         rotationXAxis = angles.x;
@@ -190,4 +198,15 @@ public class CamerOrbit : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, Anchor.transform.position, 1.0f);
     }*/
+
+    public void AdjustXSpeed()
+    {
+        Slider slider = SettingsCanvas.transform.GetChild(1).GetComponent<Slider>();
+        xSpeed = baseXSpeed * (slider.value / 10);
+    }
+    public void AdjustYSpeed()
+    {
+        Slider slider = SettingsCanvas.transform.GetChild(2).GetComponent<Slider>();
+        ySpeed = baseYSpeed * (slider.value / 5);
+    }
 }
