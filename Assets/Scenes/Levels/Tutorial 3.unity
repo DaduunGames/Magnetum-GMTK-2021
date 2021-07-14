@@ -17500,7 +17500,7 @@ MonoBehaviour:
   distanceMin: 7
   distanceMax: 30
   smoothTime: 5
-  SettingsCanvas: {fileID: 0}
+  SettingsCanvas: {fileID: 381905336}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7310,7 +7310,7 @@ MonoBehaviour:
   distanceMin: 20
   distanceMax: 40
   smoothTime: 5
-  SettingsCanvas: {fileID: 0}
+  SettingsCanvas: {fileID: 680624921}
 --- !u!81 &374972992
 AudioListener:
   m_ObjectHideFlags: 0
