@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7200927917085622770}
   - component: {fileID: 7200927917086425554}
   - component: {fileID: 7200927917087392530}
-  - component: {fileID: 7200927917085466067}
+  - component: {fileID: 478425413007102649}
   m_Layer: 0
   m_Name: Potion_Red
   m_TagString: Untagged
@@ -55,6 +55,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,6 +68,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79,8 +81,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7200927917085466067
-MeshCollider:
+--- !u!65 &478425413007102649
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89,7 +91,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: c6179e854b44e2541a9956947c806de0, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.0012689707, y: 0.0014652812, z: 0.002441838}
+  m_Center: {x: 0, y: -1.7350304e-17, z: 0.0012209194}

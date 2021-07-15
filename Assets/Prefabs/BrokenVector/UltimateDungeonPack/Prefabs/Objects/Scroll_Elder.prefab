@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3823750313428271633}
   - component: {fileID: 3823750313426944561}
   - component: {fileID: 3823750313425977585}
-  - component: {fileID: 3823750313427983926}
+  - component: {fileID: 1849532732746876334}
   m_Layer: 0
   m_Name: Scroll_Elder
   m_TagString: Untagged
@@ -55,6 +55,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,6 +68,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79,8 +81,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &3823750313427983926
-MeshCollider:
+--- !u!65 &1849532732746876334
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89,7 +91,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 1cc69bcd5c8feea4493059cb89fd3104, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.008034549, y: 0.0016934971, z: 0.0013571172}
+  m_Center: {x: 0, y: 0.00016819, z: 0.00067855837}

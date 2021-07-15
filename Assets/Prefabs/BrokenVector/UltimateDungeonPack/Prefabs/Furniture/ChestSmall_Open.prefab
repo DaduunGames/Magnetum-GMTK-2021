@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7134089011529595561}
   - component: {fileID: 7134089011526204041}
   - component: {fileID: 7134089011527170121}
-  - component: {fileID: 7134089011529426566}
+  - component: {fileID: 4603375482813832431}
   m_Layer: 0
   m_Name: ChestSmall_Open
   m_TagString: Untagged
@@ -55,6 +55,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,6 +68,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79,8 +81,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7134089011529426566
-MeshCollider:
+--- !u!65 &4603375482813832431
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89,7 +91,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: ce62fec1a5a229c4a979b14e653e62f3, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.004191183, y: 0.0052239615, z: 0.0046355748}
+  m_Center: {x: -0.00040307507, y: -0.0000032254957, z: 0.0022894621}
