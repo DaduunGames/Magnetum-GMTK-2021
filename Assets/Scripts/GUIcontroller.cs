@@ -115,6 +115,11 @@ public class GUIcontroller : MonoBehaviour
     }
     public void DeactivatePauseScreen()
     {
+        Invoke("DeactivatePause", 0.25f);
+    }
+
+    void DeactivatePause()
+    {
         WinScreen.SetActive(false);
         PauseScreen.SetActive(false);
         HowToAnim.gameObject.SetActive(false);

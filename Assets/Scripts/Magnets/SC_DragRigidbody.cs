@@ -65,6 +65,8 @@ public class SC_DragRigidbody : MonoBehaviour
             hitInfo = Hit;
         }
 
+        if (!hitInfo.collider) return null;
+
         if (hitInfo.collider.gameObject.GetComponent<Rigidbody>())
         {
             selectionDistance = Vector3.Distance(Ray.origin, hitInfo.point);

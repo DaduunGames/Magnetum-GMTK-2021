@@ -37,8 +37,8 @@ public class CamerOrbit : MonoBehaviour
     {
         xSpeed = baseXSpeed;
         ySpeed = baseYSpeed;
-        AdjustXSpeed();
-        AdjustYSpeed();
+        AdjustXSpeed(0);
+        AdjustYSpeed(0);
         Vector3 angles = transform.eulerAngles;
         rotationYAxis = angles.y;
         rotationXAxis = angles.x;
@@ -199,14 +199,13 @@ public class CamerOrbit : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, Anchor.transform.position, 1.0f);
     }*/
 
-    public void AdjustXSpeed()
+    public void AdjustXSpeed(float value)
     {
-        Slider slider = SettingsCanvas.transform.GetChild(1).GetComponent<Slider>();
-        xSpeed = baseXSpeed + (slider.value * 5);
+        xSpeed = baseXSpeed + (value * 15);
     }
-    public void AdjustYSpeed()
+    public void AdjustYSpeed(float value)
     {
-        Slider slider = SettingsCanvas.transform.GetChild(2).GetComponent<Slider>();
-        ySpeed = baseYSpeed + (slider.value * 5);
+        ySpeed = baseYSpeed + (value * 15);
     }
+
 }
