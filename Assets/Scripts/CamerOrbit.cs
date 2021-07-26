@@ -13,8 +13,7 @@ public class CamerOrbit : MonoBehaviour
     public float distance = 2.0f;
     public float xSpeed = 20.0f;
     public float ySpeed = 20.0f;
-    public float baseXSpeed = 20.0f;
-    public float baseYSpeed = 20.0f;
+    
     public float yMinLimit = -90f;
     public float yMaxLimit = 90f;
     public float distanceMin = 10f;
@@ -33,10 +32,8 @@ public class CamerOrbit : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        xSpeed = baseXSpeed;
-        ySpeed = baseYSpeed;
-        AdjustXSpeed(0);
-        AdjustYSpeed(0);
+        xSpeed = StaticVariables.x;
+        ySpeed = StaticVariables.y;
         Vector3 angles = transform.eulerAngles;
         rotationYAxis = angles.y;
         rotationXAxis = angles.x;
@@ -50,6 +47,11 @@ public class CamerOrbit : MonoBehaviour
     
     void LateUpdate()
     {
+        
+
+        xSpeed = StaticVariables.x;
+        ySpeed = StaticVariables.y;
+
         if (target)
         {
             if (Input.GetMouseButton(1) || Input.GetMouseButton(2))
@@ -85,13 +87,6 @@ public class CamerOrbit : MonoBehaviour
 
     
 
-    public void AdjustXSpeed(float value)
-    {
-        xSpeed = baseXSpeed + (value * 15);
-    }
-    public void AdjustYSpeed(float value)
-    {
-        ySpeed = baseYSpeed + (value * 15);
-    }
+    
 
 }

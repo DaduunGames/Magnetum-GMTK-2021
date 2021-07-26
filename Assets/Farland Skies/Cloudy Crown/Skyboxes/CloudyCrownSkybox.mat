@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: CloudyCrownSkybox
   m_Shader: {fileID: 4800000, guid: b39eba844529e304596997d76a5bab7e, type: 3}
-  m_ShaderKeywords: SUN_OFF _EMISSION
+  m_ShaderKeywords: MOON_OFF _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -36,17 +36,17 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _CloudsHeight: 0
+    - _CloudsHeight: -0.148
     - _CloudsOffset: 0.2
-    - _CloudsRotationSpeed: 1
-    - _Exposure: 1
-    - _MoonSize: 2.08
-    - _StarsExtinction: 7.85
-    - _StarsTwinklingSpeed: 9.2
-    - _SunSize: 1
+    - _CloudsRotationSpeed: 1.5
+    - _Exposure: 0.8
+    - _MoonSize: 1
+    - _StarsExtinction: 2
+    - _StarsTwinklingSpeed: 4
+    - _SunSize: 0.5
     m_Colors:
-    - _BottomColor: {r: 0.001971242, g: 0.22856212, b: 0.51280266, a: 1}
-    - _MoonTint: {r: 0.4641757, g: 0.5292863, b: 0.5841883, a: 1}
-    - _StarsTint: {r: 0.6583216, g: 0.6583216, b: 0.6583216, a: 1}
-    - _SunTint: {r: 0.7019608, g: 0.54901963, b: 0.36862746, a: 1}
-    - _TopColor: {r: 0.028436603, g: 0.04705883, b: 0.20098564, a: 1}
+    - _BottomColor: {r: 0.6745098, g: 0.882353, b: 0.9215687, a: 1}
+    - _MoonTint: {r: 0.4901961, g: 0.5372549, b: 1, a: 1}
+    - _StarsTint: {r: 0.483451, g: 0.483451, b: 0.483451, a: 0}
+    - _SunTint: {r: 0.75294125, g: 0.6527451, b: 0.575451, a: 1}
+    - _TopColor: {r: 0.0072156843, g: 0.6207844, b: 0.8078432, a: 1}

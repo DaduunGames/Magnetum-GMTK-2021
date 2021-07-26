@@ -12,9 +12,22 @@ public class SettingsMenu : MonoBehaviour
     Resolution[] resolutions;
     public Dropdown resolutionDropdown;
 
+    public Slider sliderX;
+    public Slider sliderY;
+
+    public Slider VolumeSlider;
+
     private void Start()
     {
-        
+        StaticVariables.x = PlayerPrefs.GetFloat("OrbitX");
+        StaticVariables.y = PlayerPrefs.GetFloat("OrbitY");
+
+        sliderX.value = (StaticVariables.x - 20)/15;
+        sliderY.value = (StaticVariables.y - 20)/15;
+
+        float volume = PlayerPrefs.GetFloat("Volume");
+        audioMixer.SetFloat("masterVol", volume);
+        VolumeSlider.value = volume;
 
 
         resolutions = Screen.resolutions;
@@ -50,12 +63,34 @@ public class SettingsMenu : MonoBehaviour
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("masterVol", volume);
+        PlayerPrefs.SetFloat("Volume", volume);
         Debug.Log(volume);
     }
 
     public void SetFullscreen (bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
+        if (isFullscreen)
+        {
+            PlayerPrefs.SetInt("fullScreen", 0);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("fullScreen", 1);
+        }
+        
+    }
+
+    public void AdjustXSpeed(float value)
+    {
+        StaticVariables.x = 20 + (value * 15);
+        PlayerPrefs.SetFloat("OrbitX", StaticVariables.x);
+    }
+    public void AdjustYSpeed(float value)
+    {
+        StaticVariables.y = 20 + (value * 15);
+
+        PlayerPrefs.SetFloat("OrbitY", StaticVariables.y);
     }
 
 }

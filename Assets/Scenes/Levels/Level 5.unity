@@ -2764,7 +2764,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1041163973}
+      - m_Target: {fileID: 1236107282}
         m_MethodName: AdjustXSpeed
         m_Mode: 0
         m_Arguments:
@@ -27578,8 +27578,6 @@ MonoBehaviour:
   distance: 30
   xSpeed: 0.5
   ySpeed: 5
-  baseXSpeed: 20
-  baseYSpeed: 20
   yMinLimit: -90
   yMaxLimit: 90
   distanceMin: 20
@@ -31654,6 +31652,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: cce4c5063319cf8408c73f3851b4d634, type: 2}
   resolutionDropdown: {fileID: 1330271937}
+  sliderX: {fileID: 126584259}
+  sliderY: {fileID: 1729276014}
+  VolumeSlider: {fileID: 1463451281}
 --- !u!114 &1236107283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44409,7 +44410,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1041163973}
+      - m_Target: {fileID: 1236107282}
         m_MethodName: AdjustYSpeed
         m_Mode: 0
         m_Arguments:
