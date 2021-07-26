@@ -76,4 +76,4 @@ Material:
     - _BaseColour: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlinerColour: {r: 1, g: 0, b: 0.037613392, a: 1}
+    - _OutlinerColour: {r: 0.18396229, g: 0.23960643, b: 1, a: 1}

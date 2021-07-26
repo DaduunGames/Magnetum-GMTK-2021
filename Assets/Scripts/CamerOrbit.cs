@@ -20,18 +20,16 @@ public class CamerOrbit : MonoBehaviour
     public float distanceMin = 10f;
     public float distanceMax = 10f;
     public float smoothTime = 2f;
-    /*public GameObject PosXAnchor;
-    public GameObject NegXAnchor;
-    public GameObject PosZAnchor;
-    public GameObject NegZAnchor;
-    public GameObject PosYAnchor;
-    public GameObject NegYAnchor;
-    public GameObject CurrentAnchor;*/
+
+
     public GameObject SettingsCanvas;
     float rotationYAxis = 0.0f;
     float rotationXAxis = 0.0f;
     float velocityX = 0.0f;
     float velocityY = 0.0f;
+
+
+
     // Use this for initialization
     void Start()
     {
@@ -47,93 +45,14 @@ public class CamerOrbit : MonoBehaviour
         {
             GetComponent<Rigidbody>().freezeRotation = true;
         }
-
-        //AnchorFinder();
     }
 
-    /*void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            if (CurrentAnchor != PosYAnchor)
-            {
-                if (CurrentAnchor == NegYAnchor)
-                {
-
-                }
-                else
-                {
-                    CurrentAnchor = PosYAnchor;
-                }
-            }
-        }
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            AnchorFinder();
-            if(CurrentAnchor == PosXAnchor)
-            {
-                CurrentAnchor = NegZAnchor;
-                transform.position = NegZAnchor.transform.position;
-            }
-            if(CurrentAnchor == NegXAnchor)
-            {
-                CurrentAnchor = PosZAnchor;
-                transform.position = PosZAnchor.transform.position;
-            }
-            if(CurrentAnchor == PosZAnchor)
-            {
-                CurrentAnchor = PosXAnchor;
-                transform.position = PosXAnchor.transform.position;
-            }
-            if(CurrentAnchor == NegZAnchor)
-            {
-                CurrentAnchor = NegXAnchor;
-                MoveTo(NegXAnchor);
-            }
-        }
-
-        if(Input.GetKeyDown(KeyCode.D))
-        {
-            AnchorFinder();
-            if(CurrentAnchor == PosXAnchor)
-            {
-                CurrentAnchor = PosZAnchor;
-                transform.position = PosZAnchor.transform.position;
-            }
-            if(CurrentAnchor == NegXAnchor)
-            {
-                CurrentAnchor = NegZAnchor;
-            }
-            if(CurrentAnchor == PosZAnchor)
-            {
-                CurrentAnchor = NegXAnchor;
-            }
-            if(CurrentAnchor == NegZAnchor)
-            {
-                CurrentAnchor = PosXAnchor;
-            }
-        }
-
-        if(Input.GetKeyDown(KeyCode.S))
-        {
-            if(CurrentAnchor != NegYAnchor)
-            {
-                if(CurrentAnchor == PosYAnchor)
-                {
-
-                }
-                else
-                {
-                    CurrentAnchor = NegYAnchor;
-                }
-            }
-        }
-    }*/
+    
     void LateUpdate()
     {
         if (target)
         {
-            if (Input.GetMouseButton(1))
+            if (Input.GetMouseButton(1) || Input.GetMouseButton(2))
             {
                 velocityX += xSpeed * Input.GetAxis("Mouse X") * 0.02f; //* distance;
                 velocityY += ySpeed * Input.GetAxis("Mouse Y") * 0.02f;
@@ -145,11 +64,6 @@ public class CamerOrbit : MonoBehaviour
             Quaternion toRotation = Quaternion.Euler(rotationXAxis, rotationYAxis, 0);
             Quaternion rotation = toRotation;
             distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * 5, distanceMin, distanceMax);
-            //RaycastHit hit;
-            //if (Physics.Linecast(target.position, transform.position, out hit))
-            //{
-            //distance -= hit.distance;
-            //}
             Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
             Vector3 position = rotation * negDistance + target.position;
 
@@ -169,35 +83,7 @@ public class CamerOrbit : MonoBehaviour
         return Mathf.Clamp(angle, min, max);
     }
 
-    /*public void AnchorFinder()
-    {
-        float PosXDistance = Vector3.Distance(gameObject.transform.position, PosXAnchor.transform.position);
-        float NegXDistance = Vector3.Distance(gameObject.transform.position, NegXAnchor.transform.position);
-        float PosZDistance = Vector3.Distance(gameObject.transform.position, PosZAnchor.transform.position);
-        float NegZDistance = Vector3.Distance(gameObject.transform.position, NegZAnchor.transform.position);
-
-        if (PosXDistance < NegXDistance && PosXDistance < PosZDistance && PosXDistance < NegZDistance)
-        {
-            CurrentAnchor = PosXAnchor;
-        }
-        if(NegXDistance < PosXDistance && NegXDistance < PosZDistance && NegXDistance < NegZDistance)
-        {
-            CurrentAnchor = NegXAnchor;
-        }
-        if(PosZDistance < PosXDistance && PosZDistance < NegXDistance && PosZDistance < NegZDistance)
-        {
-            CurrentAnchor = PosZAnchor;
-        }
-        if(NegZDistance < PosXDistance && NegZDistance < PosXDistance && NegZDistance < PosZDistance)
-        {
-            CurrentAnchor = NegZAnchor;
-        }
-    }*/
-
-    /*public void MoveTo(GameObject Anchor)
-    {
-        transform.position = Vector3.MoveTowards(transform.position, Anchor.transform.position, 1.0f);
-    }*/
+    
 
     public void AdjustXSpeed(float value)
     {
