@@ -42734,8 +42734,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000012219, y: 56}
-  m_SizeDelta: {x: 450.0995, y: 105.32965}
+  m_AnchoredPosition: {x: -0.000012219, y: 59.84}
+  m_SizeDelta: {x: 450.0995, y: 97.65431}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1563705814
 MonoBehaviour:
@@ -42758,7 +42758,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-    m_FontSize: 39
+    m_FontSize: 32
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
@@ -42769,9 +42769,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '[END OF DEMO]
+  m_Text: 'Thanks for playing!
 
-    Thanks for playing!'
+'
 --- !u!222 &1563705815
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -44200,7 +44200,7 @@ MonoBehaviour:
   distanceMin: 20
   distanceMax: 40
   smoothTime: 5
-  SettingsCanvas: {fileID: 0}
+  SettingsCanvas: {fileID: 2127194770}
 --- !u!81 &1636035948
 AudioListener:
   m_ObjectHideFlags: 0

@@ -19,11 +19,8 @@ public class SettingsMenu : MonoBehaviour
 
     private void Start()
     {
-        StaticVariables.x = PlayerPrefs.GetFloat("OrbitX");
-        StaticVariables.y = PlayerPrefs.GetFloat("OrbitY");
-
-        sliderX.value = (StaticVariables.x - 20)/15;
-        sliderY.value = (StaticVariables.y - 20)/15;
+        sliderX.value = StaticVariables.x;
+        sliderY.value = StaticVariables.y;
 
         float volume = PlayerPrefs.GetFloat("Volume");
         audioMixer.SetFloat("masterVol", volume);
@@ -83,14 +80,14 @@ public class SettingsMenu : MonoBehaviour
 
     public void AdjustXSpeed(float value)
     {
-        StaticVariables.x = 20 + (value * 15);
-        PlayerPrefs.SetFloat("OrbitX", StaticVariables.x);
+        StaticVariables.x = value;
+        PlayerPrefs.SetFloat("OrbitX", value);
     }
     public void AdjustYSpeed(float value)
     {
-        StaticVariables.y = 20 + (value * 15);
+        StaticVariables.y = value;
 
-        PlayerPrefs.SetFloat("OrbitY", StaticVariables.y);
+        PlayerPrefs.SetFloat("OrbitY", value);
     }
 
 }

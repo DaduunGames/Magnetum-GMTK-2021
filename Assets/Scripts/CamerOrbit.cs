@@ -32,6 +32,9 @@ public class CamerOrbit : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //PlayerPrefs.DeleteKey("OrbitX");
+        //PlayerPrefs.DeleteKey("OrbitY");
+
         xSpeed = StaticVariables.x;
         ySpeed = StaticVariables.y;
         Vector3 angles = transform.eulerAngles;
@@ -47,17 +50,22 @@ public class CamerOrbit : MonoBehaviour
     
     void LateUpdate()
     {
-        
 
-        xSpeed = StaticVariables.x;
-        ySpeed = StaticVariables.y;
+       
+
+
+        StaticVariables.x = PlayerPrefs.GetFloat("OrbitX");
+        StaticVariables.y = PlayerPrefs.GetFloat("OrbitY");
+
+        xSpeed = 20 + StaticVariables.x * 15;
+        ySpeed = 20 + StaticVariables.y * 15;
 
         if (target)
         {
             if (Input.GetMouseButton(1) || Input.GetMouseButton(2))
             {
-                velocityX += xSpeed * Input.GetAxis("Mouse X") * 0.02f; //* distance;
-                velocityY += ySpeed * Input.GetAxis("Mouse Y") * 0.02f;
+                velocityX += xSpeed * Input.GetAxis("Mouse X") * Time.deltaTime;
+                velocityY += ySpeed * Input.GetAxis("Mouse Y") * Time.deltaTime;
             }
             rotationYAxis += velocityX;
             rotationXAxis -= velocityY;
